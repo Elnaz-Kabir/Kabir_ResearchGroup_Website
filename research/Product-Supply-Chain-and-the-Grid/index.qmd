@@ -1,0 +1,27 @@
+---
+title: Product Supply Chain and the Grid
+alias: &ALIAS climate-risks
+image: power.png
+listing:
+  id: pubs
+  template: ../../_ejs/publications.ejs 
+  contents: 
+    - "../../../publications/articles/**/*.qmd"
+    - "../../../publications/unpublished/**/*.qmd"
+    - "!../../../publications/_template/"
+  sort: "year desc"
+  # sort-ui: true
+  filter-ui: true
+  include:
+    categories: "climate*"
+  fields: [publication, title, categories, image, date, author]
+---
+
+![](power.png){width=80% fig-align="left"}
+
+Surging electricity demand, volatile prices, and weather-driven renewable variability are straining grid operations and increasing the frequency and cost of congestion and curtailment. At the same time, many energy‑intensive industries operate large, controllable electric loads and maintain inventories of intermediate and finished products. This creates an opportunity to coordinate product supply chain decisions with grid conditions, turning product storage and operational flexibility into a form of “virtual energy storage” that can shift electricity consumption in time and space while preserving service levels and profitability. Our work models grid-oriented supply chains that capture the interactions between the power grid and industrial operations. We quantify the costs and benefits of using supply chain flexibility to support the grid, explicitly account for uncertainty, and evaluate how these strategies improve resilience and sustainability.
+
+## Selected Publications
+
+:::{#pubs}
+:::

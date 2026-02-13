@@ -1,0 +1,26 @@
+---
+title: "IOE 460 — Syllabus"
+toc: true
+page-layout: full
+---
+
+## Subjects Covered in the Class
+
+*Reference: Decision Analysis: A Bayesian Approach, J. Q. Smith*
+
+::: {.table-responsive}
+| Week | Topic | Reading |
+|---:|---|---|
+| 1 | Introduction to Decision Making | J. Q. Smith, Chapter 1 |
+| 2 | Math and Probability Review |  |
+| 3 | Trees | J. Q. Smith, Chapter 2 |
+| 4 | Utility and Certain Equivalence | J. Q. Smith, Chapter 3 |
+| 5 | Utility and Probability Elicitation | J. Q. Smith, Chapter 4 |
+| 6 | Multi-attribute Utility | J. Q. Smith, Chapter 5 |
+| 7 | Risk Attitude | J. Q. Smith, Chapter 6 |
+| 8 | Value of Information |  |
+| 9 | Sensitivity Analysis |  |
+| 10 | Bayesian Belief Networks | J. Q. Smith, Chapter 7 |
+| 11 | Bayesian Inference | J. Q. Smith, Chapter 8 |
+| 12 | Influence Diagrams |  |
+:::

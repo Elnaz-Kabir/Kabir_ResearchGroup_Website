@@ -1,0 +1,45 @@
+---
+title: "A Novel Scenario Generation Technique for a Stochastic Supply Chain Network"
+date: 2013-05-08
+author:
+  - name: Elnaz Kabir
+    url: https://elnaz-kabir.github.io/
+  - name: Rasool Shafaei
+  - name: Esmaeil Keyvanshokooh
+categories:
+  - supply chain
+  - stochastic programming
+  - scenario generation
+  - uncertainty
+  - MILP
+url_source: https://www.researchgate.net/profile/Elnaz-Kabir/publication/325117780_A_Novel_Scenario_Generation_Technique_for_a_Stochastic_Supply_Chain_Network/links/5af8da884585157136ee5460/A-Novel-Scenario-Generation-Technique-for-a-Stochastic-Supply-Chain-Network.pdf
+journ: "6th International Conference of Iranian Operations Research Society"
+year: 2013
+image: supply-chain-network.webp
+---
+
+## Abstract
+
+In this work, we propose a multi-product, single-period supply chain network design model under uncertainty. The main contribution is a hybrid scenario generation approach that combines **Latin Hypercube Sampling (LHS)** with a **scenario reduction** method to efficiently generate representative scenarios for *uncertain, correlated customer demands*. The supply chain network includes plants, distribution centers, and customers, and the resulting mixed-integer linear programming (MILP) formulation seeks to minimize total network cost while incorporating a customer satisfaction constraint.
+
+## Keywords
+
+Mixed-integer linear programming (MILP); Uncertainty; Stochastic programming; Latin Hypercube Sampling (LHS)
+
+## Publication Details
+
+- **Conference:** 6th International Conference of Iranian Operations Research Society  
+- **Dates:** May 8–9, 2013  
+- **Location/Organizer:** Research Center of Operations Research  
+
+## Citation
+
+```bibtex
+@inproceedings{KabirShafaeiKeyvanshokooh2013ScenarioGeneration,
+  title        = {A Novel Scenario Generation Technique for a Stochastic Supply Chain Network},
+  author       = {Kabir, Elnaz and Shafaei, Rasool and Keyvanshokooh, Esmaeil},
+  booktitle    = {6th International Conference of Iranian Operations Research Society},
+  year         = {2013},
+  month        = may
+}
+```

@@ -1,22 +1,22 @@
 ---
-pagetitle: "Srikrishnan Research Group"
+pagetitle: "Elnaz Kabir Research Group"
 page-layout: full
-title: "Climate, Risk, and Complex Systems"
-subtitle: "Welcome to the Srikrishnan Research Group"
-title-block-banner: "assets/logos/sea_level_rise_banner.png"
+title: "Laboratory for Advancing Sustainable Energy Resilience (LASER)"
+subtitle: "Welcome to the Elnaz Kabir Research Group"
+title-block-banner: "_site/assets/logos/electricity.png"
 title-block-banner-color: "#f7f7f7"
 ---
 
 :::: {.columns}
 ::: {.column width=60%}
 
-Climate change is a systems problem. Managing climate risk requires infrastructure investments aimed at reducing greenhouse gas emissions and adapting to changes in extreme events. These investment strategies need to account for deep uncertainty and complex dynamics across sectors and between the natural and human systems. They affect stakeholders with diverse values and preferences, and have the potential to increase equity, resilience, and justice.
+The electric power grid is the backbone of modern society, enabling nearly every other critical infrastructure. As electrification expands, AI data centers and reshored manufacturing add major new demand, and extreme weather events become more disruptive, the role of the grid becomes even more vital. At the same time, the energy transition is reshaping how we plan and operate the grid. More renewables, storage, and decentralized resources—along with fast-growing large loads—are making electricity supply and demand more variable and more weather-sensitive, increasing uncertainty and operational challenges.
 
-Our research group focuses on the role of environmental and socioeconomic uncertainties in shaping the efficacy of climate risk management strategies. Our interdisciplinary, mission-oriented research addresses a broad set of problems, from flood risk management to energy-system investments and draws on tools from systems engineering, decision science, data science, and economics.
+Our research group develops and applies advanced analytics to model, optimize, and strengthen future energy systems under uncertainty, with a focus on renewable-rich, electrified, decentralized, and interdependent networks. Our interdisciplinary, mission-driven work includes weather-informed forecasting of renewable generation, electricity demand, and prices; modeling storm and hurricane impacts on outages and restoration; and planning and operating power systems with high levels of renewables and storage using stochastic, robust, and data-driven optimization methods. We also study hydrogen integration as a long-duration energy storage option and industrial supply chains as flexible, grid-interactive resources that coordinate production and logistics decisions with grid conditions.
 :::
 ::: {.column width=35%}
 
-![](assets/figures/agu_group_24.jpg){width=80% fig-alt="Research group members at AGU 2024"}
+![](assets/figures/Texas_A&M_University_logo.svg){style="display:block; margin-left:auto; margin-right:auto; "width=100% fig-alt="Texas A&M University"}
 
 :::
 ::::

@@ -1,0 +1,65 @@
+---
+title: &TITLE Shubham Singhal
+last: Singhal
+first: Shubham
+people_group: "gradstudent"
+email: "shubhamsinghaltamu@tamu.edu"
+education:
+  M.S. Student, Computer Science, Texas A&M University  <br> B.S. Information Technology, Maharaja Agrasen Institute of Technology, 2024
+subtitle: "M.S. Student, Computer Science, Texas A&M University"
+affiliation: Cornell University
+image: Shubham.jpg
+page-layout: full
+about: 
+  id: about
+  template: trestles
+  image-shape: round
+  image: Shubham.jpg
+  links:
+    #- text: "{{< ai cv >}} Curriculum Vitae"
+    #  href: https://drive.google.com/file/d/1SP1-wRLUf2AV7CPN09ReJGI8h1FIApBW/view?usp=sharing
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/shubham-singhal-009557213/
+    - icon: envelope
+      text: Email
+      href: mailto:shubhamsinghaltamu@tamu.edu
+    - icon: github
+      text: GitHub 
+      href: https://github.com/ShubhamSinghal09
+listing:
+  id: pubs
+  template: ../../_ejs/publications.ejs 
+  contents: 
+    - "../../../publications/**/*.qmd"
+    - "!../../../publications/_template/"
+  sort: "year desc"
+  # sort-ui: true
+  filter-ui: true
+  include:
+    author: *TITLE
+  fields: [publication, title, categories, image, date, author]
+---
+
+<hr>
+
+## About
+
+:::{#about}
+
+Shubham Singhal is a Masters in Computer science student here at Texas A&M Univeristy
+
+
+## Education
+
+
+{{< meta education >}}
+
+:::
+
+<p>
+
+## Group Publications
+
+:::{#pubs}
+:::

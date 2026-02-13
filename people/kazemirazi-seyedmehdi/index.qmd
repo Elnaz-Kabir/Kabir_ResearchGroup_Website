@@ -1,0 +1,64 @@
+---
+title: &TITLE Seyedmehdi kazemiraz
+last: kazemiraz
+first: Seyedmehdi
+people_group: "gradstudent"
+email: "mahdi.kazemirazi@tamu.edu"
+education:
+  - PH.D. Student, Electrical and Computer Engineering, Texas A&M University <br> M.S. Electrical Engineering, 2025
+subtitle: "PH.D. Student, Electrical and Computer Engineering, Texas A&M University"
+affiliation: Cornell University
+image: Seyed.jpeg
+page-layout: full
+about: 
+  id: about
+  template: trestles
+  image-shape: round
+  image: Seyed.jpeg
+  links:
+    - icon: envelope
+      text: Email
+      href: mahdi.kazemirazi@tamu.edu
+    - icon: github
+      text: GitHub 
+      href: https://github.com/mahdi-kazemirazi
+    - icon: linkedin
+      text: LinkedIn
+      href: www.linkedin.com/in/mk-raziin-elp
+listing:
+  id: pubs
+  template: ../../_ejs/publications.ejs 
+  contents: 
+    - "../../../publications/**/*.qmd"
+    - "!../../../publications/_template/"
+  sort: "year desc"
+  # sort-ui: true
+  filter-ui: true
+  include:
+    author: *TITLE
+  fields: [publication, title, categories, image, date, author]
+---
+
+<hr>
+
+## About
+
+:::{#about}
+
+
+Seyedmehdi is a Ph.D. student . His research focuses on applying machine learning and physics-informed machine learning to improve forecasting of renewable generation, electricity demand, and market prices, with the goal of enhancing resource adequacy and reliability in power systems. Outside of research, He enjoys staying active through volleyball and hiking.
+
+
+## Education
+
+
+{{< meta education >}}
+
+:::
+
+<p>
+
+## Group Publications
+
+:::{#pubs}
+:::

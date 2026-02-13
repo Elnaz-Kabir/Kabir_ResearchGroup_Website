@@ -1,0 +1,36 @@
+---
+title: "Predictive and Prescriptive Analytics for Managing the Impact of Hazards on Power Systems"
+date: 2021-01-01
+author:
+  - name: Elnaz Kabir
+    url: https://elnaz-kabir.github.io/
+categories:
+  - power system resilience
+  - extreme weather
+  - predictive analytics
+  - prescriptive analytics
+  - optimization under uncertainty
+  - dissertation
+journ: "Ph.D. Dissertation"
+year: 2021
+image: power_system.jpeg
+---
+
+## Abstract
+
+Natural hazards and extreme weather events can cause significant disruptions to electric power systems, resulting in costly and time-consuming repairs as well as substantial burdens on utilities and customers. The frequency and severity of such events have increased over recent decades and are expected to intensify due to climate change, making resilience planning a critical priority.
+
+This dissertation develops data-driven predictive and prescriptive analytics frameworks to improve preparation for and response to weather-induced outages under uncertainty. The research first introduces predictive models that estimate the probability distribution of outages in advance of storms, addressing challenges such as zero-inflated outage data and inherent stochasticity. It then proposes optimization-based decision models for coordinating repair crews and allocating resources efficiently in response to uncertain outage forecasts. Together, these approaches contribute to improved outage management, enhanced situational awareness, and more resilient power system operations.
+
+## Citation
+
+::: {.code-block}
+```bibtex
+@phdthesis{Kabir2021Dissertation,
+  title  = {Predictive and Prescriptive Analytics for Managing the Impact of Hazards on Power Systems},
+  author = {Kabir, Elnaz},
+  year   = {2021},
+  school = {University of Michigan}
+}
+```
+:::

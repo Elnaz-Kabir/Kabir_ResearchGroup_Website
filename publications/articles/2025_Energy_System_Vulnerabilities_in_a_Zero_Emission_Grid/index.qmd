@@ -1,0 +1,43 @@
+---
+title: "Energy System Vulnerabilities in a Zero-Emission Grid: The Role of Climate Variability and Technology Uncertainty"
+date: 2025-08-13
+author:
+  - name: M. Vivienne Liu
+  - name: Vivek Srikrishnan
+  - name: Kenji Doering
+  - name: Elnaz Kabir
+    url: https://elnaz-kabir.github.io/
+  - name: Scott Steinschneider
+  - name: C. Lindsay Anderson
+categories:
+  - energy transition
+  - zero-emission grid
+  - climate variability
+  - power system reliability
+  - technology uncertainty
+url_source: https://doi.org/10.1016/j.energy.2025.137937
+journ: "Energy"
+page: 137937
+year: 2025
+doi: 10.1016/j.energy.2025.137937
+image: zero.jpg
+---
+
+## Abstract
+
+Ambitious decarbonization policies, such as New York’s Climate Leadership and Community Protection Act, aim to achieve a zero-emission electricity grid by 2040. While such transitions promise significant reductions in greenhouse gas emissions, they may also introduce new system vulnerabilities under changing climatic and technological conditions. This study develops a high-resolution energy system model that incorporates detailed operational constraints across diverse future climate and technology scenarios. Using the New York State power system as a case study, the analysis identifies spatial and temporal vulnerabilities arising from interactions among renewable resource variability, evolving load patterns, and transmission congestion. Results indicate that maintaining reliability in a zero-emission grid may require substantially more clean-firm capacity than previously anticipated, highlighting the importance of explicitly accounting for climate variability and technology uncertainty in long-term planning.
+
+## Citation
+
+::: {.code-block}
+```bibtex
+@article{LiuSrikrishnanDoeringKabirEtAl2025,
+  title   = {Energy System Vulnerabilities in a Zero-Emission Grid: The Role of Climate Variability and Technology Uncertainty},
+  author  = {Liu, M. Vivienne and Srikrishnan, Vivek and Doering, Kenji and Kabir, Elnaz and Steinschneider, Scott and Anderson, C. Lindsay},
+  journal = {Energy},
+  pages   = {137937},
+  year    = {2025},
+  doi     = {10.1016/j.energy.2025.137937}
+}
+```
+:::

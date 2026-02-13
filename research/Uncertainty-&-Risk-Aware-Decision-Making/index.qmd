@@ -1,0 +1,27 @@
+---
+title: Uncertainty & Risk Aware Decision Making
+alias: &ALIAS energy-climate
+image: uncertain.png
+listing:
+  id: pubs
+  template: ../../_ejs/publications.ejs 
+  contents: 
+    - "../../../publications/articles/**/*.qmd"
+    - "../../../publications/unpublished/**/*.qmd"
+    - "!../../../publications/_template/"
+  sort: "year desc"
+  # sort-ui: true
+  filter-ui: true
+  include:
+    categories: "*{electric, power, energy}*"
+  fields: [publication, title, categories, image, date, author]
+---
+
+![](uncertain.png){width=80% fig-align="left"}
+
+Uncertainty and risks are inherent in real-world decision-making, fundamentally impacting how systems are designed and operated. In the context of power systems, unpredictable disruptions—such as weather events, fluctuating demand, and technology costs—require decision frameworks that explicitly account for these uncertainties to ensure robust and resilient outcomes. Our research addresses these challenges by integrating advanced optimization frameworks, such as stochastic programming and adaptive robust optimization, to handle both probabilistic and non-probabilistic uncertainties. These works enable decision-makers to anticipate and respond to unpredictable disruptions, strengthen system resilience, and ensure efficient planning and operation even when faced with complex and evolving uncertainties.
+
+## Selected Publications
+
+:::{#pubs}
+:::

@@ -1,0 +1,64 @@
+---
+title: &TITLE Farah Jaradat
+last: Jaradat
+first: Farah
+people_group: "gradstudent"
+email: "farah_tamu_92@tamu.edu"
+education:
+  - PH.D. Student, Electrical and Computer Engineering, Texas A&M University <br> M.S. Electrical Engineering, Texas State University, 2019 <br> B.S. Yarmouk University, Jordan, 2016
+
+subtitle: "PH.D. Student, Electrical and Computer Engineering, Texas A&M University"
+affiliation: Cornell University
+image: Farah.jpg
+page-layout: full
+about: 
+  id: about
+  template: trestles
+  image-shape: round
+  image: Farah.jpg
+  image-alt: "Profile Picture"
+  links:
+    - icon: envelope
+      text: Email
+      href: mailto:nk556@cornell.edu
+    - icon: github
+      text: GitHub
+      href: https://github.com/farahtamu92-cpu
+listing:
+  id: pubs
+  template: ../../_ejs/publications.ejs 
+  contents: 
+    - "../../../publications/**/*.qmd"
+    - "!../../../publications/_template/"
+  sort: "year desc"
+  # sort-ui: true
+  filter-ui: true
+  include:
+    author: *TITLE
+  fields: [publication, title, categories, image, date, author]
+---
+
+<hr>
+
+## About
+
+:::{#about}
+Farah is a PhD student in power and energy systems, with a research focus on modeling AI-centric data center power demand and integrating AI agents for smarter grid and energy hub operation. Her work sits at the intersection of energy systems and intelligent decision-making, aiming to improve efficiency, reliability, and adaptability in modern power networks.
+
+Outside of her research, she enjoy spending time outdoors through hiking, and likes working with her hands through crafting and beading, which gives her a creative balance to her technical work.
+
+<br>
+
+## Education
+
+
+{{< meta education >}}
+
+:::
+
+<p>
+
+## Group Publications
+
+:::{#pubs}
+:::

@@ -1,0 +1,40 @@
+---
+title: "Supply Chain Coordination Under Increased Grid Variability: A Win–Win Paradigm for Industry and the Grid"
+date: 2026-01-01
+author:
+  - name: Elnaz Kabir
+    url: https://elnaz-kabir.github.io/
+  - name: Leila Talebi
+  - name: Halil Iseri
+  - name: Eman Hammad
+  - name: Eleftherios Iakovou
+  - name: Mark O'Malley
+categories:
+  - supply chain optimization
+  - grid flexibility
+  - renewable integration
+  - energy transition
+  - industrial decarbonization
+url_source: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6151008
+journ: "SSRN Working Paper"
+year: 2026
+image: grid.webp
+---
+
+## Abstract
+
+Surging electricity demand and weather-driven renewable variability are increasing operational stress on modern power systems, creating a need for new sources of flexibility. Energy-intensive product supply chains present a promising opportunity to provide grid-support services through coordinated production, storage, and transportation decisions. This study develops a process-centric, spatiotemporal supply chain framework with quantitative flexibility and cost metrics to evaluate how industrial systems can respond to grid signals. Two case studies—steel manufacturing and ammonia production—are examined across the United States using projected 2030 renewable-rich grid conditions. Results demonstrate that grid-aware supply chain coordination can substantially reduce total supply chain costs while simultaneously providing large amounts of seasonal energy storage at lower cost than conventional storage technologies. The findings highlight a tangible pathway to align industrial operations with evolving grid conditions, delivering both economic and environmental benefits.
+
+## Citation
+
+::: {.code-block}
+```bibtex
+@article{KabirTalebiIseriEtAl2026,
+  title   = {Supply Chain Coordination Under Increased Grid Variability: A Win--Win Paradigm for Industry and the Grid},
+  author  = {Kabir, Elnaz and Talebi, Leila and Iseri, Halil and Hammad, Eman and Iakovou, Eleftherios and O'Malley, Mark},
+  journal = {SSRN Working Paper},
+  year    = {2026},
+  note    = {Available at SSRN 6151008}
+}
+```
+:::

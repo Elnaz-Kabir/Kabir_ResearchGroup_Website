@@ -1,0 +1,77 @@
+---
+title: &TITLE Elnaz Kabir
+last: Kabir
+first: Elnaz
+people_group: "pi"
+email: "vs498@cornell.edu"
+education:
+  - Ph.D., Industrial & Operations Engineering, University of Michigan, 2021 <br> M.S., Statistics, University of Michigan, 2017 <br> B.S., Industrial Engineering, K.N.T. University of Technology, Tehran, Iran, 2011
+subtitle: "Assistant Professor <br> 
+Engineering Technology & Industrial Distribution Department, 
+Electrical and Computer Engineering Department (Affiliated)
+"
+affiliation: "Cornell University"
+image: ElnazKabir.jpg
+page-layout: full
+about: 
+  id: about
+  template: trestles
+  image-shape: round
+  image: ElnazKabir.jpg
+  image-alt: "Profile Picture"
+  links:
+    #- text: "{{< ai cv >}} Curriculum Vitae"
+     # href: https://viveks.me/assets/pdf/Srikrishnan-CV.pdf
+    - icon: globe
+      text: Web
+      href: https://elnaz-kabir.github.io/
+    - icon: envelope
+      text: Email
+      href: mailto:ekabir@tamu.edu
+    - text: "{{< ai google-scholar >}} Google Scholar"
+      href: https://scholar.google.com/citations?user=itDj2Y0AAAAJ&hl=en&oi=ao
+    #- text: "{{< ai orcid >}} Orcid"
+     # href: https://orcid.org/0000-0003-0049-3805
+    #- text: "{{< ai researchgate >}} ResearchGate"
+     # href: https://www.researchgate.net/profile/Vivek-Srikrishnan
+    - icon: github
+      text: GitHub 
+      href: https://github.com/Elnaz-Kabir
+listing:
+  id: pubs
+  template: ../../_ejs/publications.ejs 
+  contents: 
+    - "../../../publications/**/*.qmd"
+    - "!../../../publications/_template/"
+  sort: "year desc"
+  # sort-ui: true
+  filter-ui: true
+  include:
+    author: *TITLE
+  fields: [publication, title, categories, image, date, author]
+---
+
+<hr>
+
+## About
+
+:::{#about}
+
+Elnaz kabir is an Assistant Professor in the Department of Engineering Technology and Industrial Distribution at Texas A&M University.  Her research is centered on developing and applying advanced analytics to model, optimize, and
+strengthen future energy systems under uncertainty. In particular, she focuses on systems that are renewable-rich, electrified, AI-intensive, decentralized, and interdependent across electricity, hydrogen, and supply chain networks.
+
+
+## Education
+
+
+{{< meta education >}}
+
+
+:::
+
+<p>
+
+## Group Publications
+
+:::{#pubs}
+:::

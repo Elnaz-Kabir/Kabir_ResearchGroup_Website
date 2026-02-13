@@ -2,28 +2,81 @@
 title: Join Us
 ---
 
-::: {.callout-important}
-## Consult The Lab Manual
+We are always interested in working with motivated students and researchers who want to contribute to advancing resilient, data-driven, and sustainable energy systems. Our group focuses on combining analytics, optimization, and domain knowledge to address real-world challenges in modern power and infrastructure systems.
 
-Read our [lab manual](../lab-manual/){target=_blank} to learn more about our expectations and culture. Your inquiries may not receive a response if you do not follow the procedures in the lab manual: this is a sign of intent!
-:::
+If you are interested in joining the Laboratory for Advancing Sustainable Energy Resilience (LASER), please review the information below and contact us with your background, interests, and CV.
 
 :::: {.grid}
+
 ::: {.g-col-4}
+
 ### Undergraduates
 
-There is support for motivated undergraduates to work for pay or credit on a variety of projects related to climate, energy, and/or flooding.
-See the lab guide's [instructions for prospective undergraduates](https://viveks.bee.cornell.edu/lab-manual/applying/undergrad/){target=_blank}.
+We welcome highly motivated undergraduate students who are interested in gaining hands-on research experience in areas such as:
+
+- Data analytics for energy and infrastructure systems  
+- Forecasting renewable generation, demand, and electricity prices  
+- Visualization and interpretation of large-scale operational data  
+- Modeling uncertainty in real-world engineering systems  
+
+Students may participate through research credits, directed studies, or funded positions depending on availability.
+
+If you are interested, please email **Dr. Elnaz Kabir** with a brief description of your interests and experience.
+
+📧 <ekabir@tamu.edu>
+
 :::
+
 ::: {.g-col-4}
+
 ### Graduate Students
 
-In light of the evolving federal science funding landscape, we are not actively recruiting graduate students at this time.
-Students with external funding are [welcome to apply](https://viveks.bee.cornell.edu/lab-manual/applying/graduate/){target=_blank}.
-:::
-::: {.g-col-4}
-### Postdocs
+Prospective graduate students interested in research related to:
 
-I am preparing an ad for a postdoc with an ideal start date in the fall (August -- October) in the area of modeling urban- and national-scale socioeconomic systems impacted by flooding. If you are interested, please [reach out for preliminary discussions](https://viveks.bee.cornell.edu/lab-manual/applying/postdoc/){target=_blank}. For other areas of research, if you have external funding or would like to work with Vivek on applying for external funding, please [feel free to reach out](https://viveks.bee.cornell.edu/lab-manual/applying/postdoc/){target=_blank}.
+- Predictive analytics for power systems  
+- Renewable-rich grid planning and resilience  
+- Stochastic and robust optimization under uncertainty  
+- Energy storage, hydrogen systems, and flexible industrial loads  
+- Interactions between supply chains and the electric grid  
+
+are encouraged to reach out to discuss alignment of research interests.
+
+Applicants should include their CV, transcripts, and a short statement describing how their background connects to the group’s research themes.
+
+📧 <ekabir@tamu.edu>
+
 :::
+
+::: {.g-col-4}
+
+### Postdoctoral Researchers
+
+We welcome inquiries from postdoctoral scholars interested in advancing interdisciplinary research at the intersection of:
+
+- Energy systems modeling and optimization  
+- Climate and weather impacts on infrastructure resilience  
+- Large-scale uncertainty-aware decision frameworks  
+- Data-driven methods for emerging grid challenges such as AI-driven load growth and electrification  
+
+Candidates with external fellowship funding, or those interested in collaborating on funding proposals, are especially encouraged to connect.
+
+Please email Dr. Kabir with your CV, research summary, and potential funding interests.
+
+📧 <ekabir@tamu.edu>
+
+:::
+
 ::::
+
+---
+
+## What We Look For
+
+We value collaborators who are:
+
+- Curious about solving real-world energy and infrastructure problems  
+- Comfortable working across data, modeling, and engineering domains  
+- Interested in interdisciplinary, impact-driven research  
+- Motivated to translate analytics into actionable system insights  
+
+Our work is highly collaborative and combines tools from engineering, statistics, operations research, and computer science to strengthen future energy systems.

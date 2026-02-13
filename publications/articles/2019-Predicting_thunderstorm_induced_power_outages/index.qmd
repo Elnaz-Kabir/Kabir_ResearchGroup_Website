@@ -1,0 +1,44 @@
+---
+title: "Predicting thunderstorm-induced power outages to support utility restoration"
+date: 2019-05-01
+author:
+  - name: Elnaz Kabir
+    url: https://elnaz-kabir.github.io/
+  - name: Seth D. Guikema
+  - name: Steven M. Quiring
+categories:
+  - power systems
+  - outage prediction
+  - resilience
+  - machine learning
+  - extreme weather
+url_source: https://doi.org/10.1109/TPWRS.2019.2922971
+journ: "IEEE Transactions on Power Systems"
+volume: 34
+issue: 6
+page: 4370-4381
+year: 2019
+doi: 10.1109/TPWRS.2019.2922971
+image: power-outage.webp
+---
+
+## Abstract
+
+Strong thunderstorms can significantly disrupt electric power systems, causing outages that pose economic and societal risks. Predicting outages prior to storm events is therefore critical for effective utility restoration planning. However, outage data are typically zero-inflated and inherently stochastic, creating challenges such as model bias and limited predictive accuracy. This paper develops a novel predictive framework that integrates mixture models with resampling and cost-sensitive learning to better estimate the probability distribution of outages. The approach explicitly accounts for uncertainty and variability in storm impacts, improving predictive performance and providing utilities with actionable information for preparedness and response.
+
+## Citation
+
+::: {.code-block}
+```bibtex
+@article{KabirGuikemaQuiring2019,
+  title   = {Predicting thunderstorm-induced power outages to support utility restoration},
+  author  = {Kabir, Elnaz and Guikema, Seth D. and Quiring, Steven M.},
+  journal = {IEEE Transactions on Power Systems},
+  volume  = {34},
+  number  = {6},
+  pages   = {4370--4381},
+  year    = {2019},
+  doi     = {10.1109/TPWRS.2019.2922971}
+}
+```
+:::

@@ -1,0 +1,64 @@
+---
+title: &TITLE Jonathan Rodezno
+last: Rodezno
+first: Jonathan
+people_group: "undergrad"
+email: "ced227@cornell.edu"
+education:
+  - B.S. Student Industrial Distribution, Texas A&M University
+subtitle: "B.S. Industrial Distribution, Texas A&M University"
+affiliation: Commonwealth Engineers
+image: jonathan.jpeg
+page-layout: full
+about: 
+  id: about
+  template: trestles
+  image-shape: round
+  image: jonathan.jpeg
+  links:
+    - icon: envelope
+      text: Email
+      href: mailto:jonathan1417@tamu.edu
+    #- text: "{{< ai orcid >}} Orcid"
+    #  href: https://orcid.org/0000-0003-4390-2656
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/jonathan-rodezno/
+    - icon: github
+      text: GitHub 
+      href: https://github.com/Jonathan1417 
+listing:
+  id: pubs
+  template: ../../_ejs/publications.ejs 
+  contents: 
+    - "../../../publications/**/*.qmd"
+    - "!../../../publications/_template/"
+  sort: "year desc"
+  # sort-ui: true
+  filter-ui: true
+  include:
+    author: *TITLE
+  fields: [publication, title, categories, image, date, author]
+---
+
+<hr>
+
+## About
+
+:::{#about}
+
+Jonathan is a B.S student Industrial Distribution here at Texas A&M Univeristy. His interests center on learning and applying data science, particularly within supply chain and operational contexts. He is eager to further explore the field of data science and is highly motivated to deepen his knowledge through research that tackles real-world problems using data-driven approaches. Outside of work, he enjoys sports such as fútbol and swimming, meeting new people, and traveling.
+
+## Education
+
+
+{{< meta education >}}
+
+:::
+
+<p>
+
+## Group Publications
+
+:::{#pubs}
+:::

@@ -1,0 +1,27 @@
+---
+title: Renewable-Rich Grids and Energy Storage
+alias: &ALIAS flood-risk
+image: renewable.png
+listing:
+  id: pubs
+  template: ../../_ejs/publications.ejs 
+  contents: 
+    - "../../../publications/articles/**/*.qmd"
+    - "../../../publications/unpublished/**/*.qmd"
+    - "!../../../publications/_template/"
+  sort: "year desc"
+  # sort-ui: true
+  filter-ui: true
+  include:
+    categories: "*flood*"
+  fields: [publication, title, categories, image, date, author]
+---
+
+![](renewable.png){width=80% fig-align="left"}
+
+As renewable energy penetration increases, variability in power grids becomes more pronounced. This variability occurs on both the demand side—driven by electrification and demand spikes—and on the generation side. The intermittent nature of wind and solar creates challenges for maintaining reliable and efficient operations. Traditionally, the grid relies on technologies like flywheels and battery energy storage systems (BESS) to manage short-term imbalances. However, these systems are less effective at addressing long-term variability, particularly from wind and hydro resources. As a result, energy storage methods such as hydrogen are gaining attention for their ability to mitigate long-duration imbalances and enhance system resilience. Our research responds to these challenges by quantifying spatiotemporal variability in renewable-rich grids, optimizing BESS siting and sizing, and developing hydrogen supply chain planning models to support a robust energy transition.
+
+## Selected Publications
+
+:::{#pubs}
+:::

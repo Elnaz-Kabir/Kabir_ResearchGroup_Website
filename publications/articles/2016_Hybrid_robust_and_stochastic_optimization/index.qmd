@@ -1,0 +1,43 @@
+---
+title: "Hybrid robust and stochastic optimization for closed-loop supply chain network design using accelerated Benders decomposition"
+date: 2016-02-16
+author:
+  - name: Esmaeil Keyvanshokooh
+  - name: Sarah M. Ryan
+  - name: Elnaz Kabir
+    url: https://elnaz-kabir.github.io/
+categories:
+  - supply chain
+  - optimization
+  - stochastic programming
+  - robust optimization
+  - Benders decomposition
+  - closed-loop supply chain
+url_source: https://doi.org/10.1016/j.ejor.2015.10.044
+journ: "European Journal of Operational Research"
+volume: 249
+issue: 1
+page: 76-92
+year: 2016
+doi: 10.1016/j.ejor.2015.10.044
+image: supply-chain-2.jpg
+---
+
+## Abstract
+
+Environmental, social, and economic concerns motivate the operation of closed-loop supply chain networks (CLSCNs) in many industries. This work proposes a profit-maximization model for CLSCN design as a mixed-integer linear program, allowing flexibility in covering proportions of demand satisfied and returns collected based on firm policies. A key contribution is a hybrid robust–stochastic programming (HRSP) approach that models two different types of uncertainty by including stochastic scenarios for transportation costs and polyhedral uncertainty sets for demands and returns. Transportation cost scenarios are generated via Latin Hypercube Sampling and consolidated through scenario reduction. An accelerated stochastic Benders decomposition algorithm is developed to solve the resulting model efficiently and improve convergence.
+
+::: {.code-block}
+```bibtex
+@article{KeyvanshokoohRyanKabir2016,
+  title     = {Hybrid robust and stochastic optimization for closed-loop supply chain network design using accelerated Benders decomposition},
+  author    = {Keyvanshokooh, Esmaeil and Ryan, Sarah M. and Kabir, Elnaz},
+  journal   = {European Journal of Operational Research},
+  volume    = {249},
+  number    = {1},
+  pages     = {76--92},
+  year      = {2016},
+  doi       = {10.1016/j.ejor.2015.10.044}
+}
+```
+:::

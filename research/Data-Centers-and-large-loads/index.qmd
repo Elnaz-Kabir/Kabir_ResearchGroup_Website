@@ -1,0 +1,27 @@
+---
+title: Data Centers and large loads
+alias: &ALIAS climate-risks
+image: datacenter.png
+listing:
+  id: pubs
+  template: ../../_ejs/publications.ejs 
+  contents: 
+    - "../../../publications/articles/**/*.qmd"
+    - "../../../publications/unpublished/**/*.qmd"
+    - "!../../../publications/_template/"
+  sort: "year desc"
+  # sort-ui: true
+  filter-ui: true
+  include:
+    categories: "climate*"
+  fields: [publication, title, categories, image, date, author]
+---
+
+![](datacenter.png){width=80% fig-align="left"}
+
+The rapid economic growth and widespread adoption of Artificial Intelligence (AI) in daily applications are driving demand for hyperscale data centers, which require vast amounts of energy for computation and cooling. This growth introduces significant uncertainty in data center loads, making it difficult for grid planners and operators to make informed interconnection and resource adequacy decisions. In our research, we develop models to accurately quantify and forecast large data center loads, create methodological frameworks for assessing the risks associated with these unpredictable demands, and evaluate the effectiveness of various mitigation strategies. We also design optimal approaches to address data center risks, including co-locating generation and storage facilities, and leveraging data center demand flexibility to support grid reliability and resilience.
+
+## Selected Publications
+
+:::{#pubs}
+:::

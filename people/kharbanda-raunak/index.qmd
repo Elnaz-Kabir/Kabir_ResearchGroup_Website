@@ -1,0 +1,63 @@
+---
+title: &TITLE Raunak Kharbanda
+last: Kharbanda
+first: Raunak
+people_group: "gradstudent"
+email: "raunak@tamu.edu"
+education:
+  - M.S. Student, Computer Science, Texas A&M University  <br> B.S. Information Technology, Maharaja Agrasen Institute of Technology, 2024
+subtitle: "M.S. Student, Computer Science, Texas A&M University"
+affiliation: Cornell University
+image: raunak.jpeg
+page-layout: full
+about: 
+  id: about
+  template: trestles
+  image-shape: round
+  image: raunak.jpeg
+  links:
+    - icon: envelope
+      text: Email
+      href: mailto:raunak@tamu.edu
+    #- icon: github
+    #  text: GitHub 
+    #  href: http://github.com/parinbhaduri
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/raunakkharbanda/
+listing:
+  id: pubs
+  template: ../../_ejs/publications.ejs 
+  contents: 
+    - "../../../publications/**/*.qmd"
+    - "!../../../publications/_template/"
+  sort: "year desc"
+  # sort-ui: true
+  filter-ui: true
+  include:
+    author: *TITLE
+  fields: [publication, title, categories, image, date, author]
+---
+
+<hr>
+
+## About 
+
+:::{#about}
+
+
+Raunak Kharbanda is a Master’s student in Computer Science at Texas A&M University with interests in data science, machine learning, and real-world problem solving. He has industry experience, including a Software Development Engineer internship at Amazon Web Services, working on production-level systems and applied ML projects. He is motivated to pursue research that connects theory with practical applications. Outside academics, he maintains an active lifestyle and regularly works out and plays sports.
+
+## Education
+
+
+{{< meta education >}}
+
+:::
+
+<p>
+
+## Group Publications
+
+:::{#pubs}
+:::

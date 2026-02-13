@@ -11,16 +11,10 @@ page-layout: full
 
 ## Funding
 
-We are grateful to our current and previous sponsors:
+We are grateful to our current sponsors:
 
-### Current Sponsors
-
-- [U.S. Department of Energy](https://energy.gov/)
-  - [BER, MultiSector Dynamics](https://eesm.science.energy.gov/program-area/multisector-dynamics)
-  - [EERE, Water Power Technologies Office](https://www.energy.gov/eere/water/water-power-technologies-office)
-- [Cornell Atkinson Center for Sustainability](https://atkinson.cornell.edu/)
-
-### Previous Sponsors
-
-- [National Science Foundation](https://nsf.gov/)
-  - [Environmental Sustainability](https://www.nsf.gov/funding/opportunities/environmental-sustainability)
+- **[U.S. Department of Energy (DOE)](https://energy.gov/)**
+- **[Office of Cybersecurity, Energy Security, and Emergency Response (CESER)](https://www.energy.gov/ceser/office-cybersecurity-energy-security-and-emergency-response)**
+- **[Power Systems Engineering Research Center (PSERC)](https://pserc.wisc.edu/get-emails-from-pserc/)**
+- **[Texas A&M University – Division of Research](https://research.tamu.edu/)**
+- **[Targeted Proposal Teams (TPT) Funding Program](https://research.tamu.edu/funding/targeted-proposal-teams/)**

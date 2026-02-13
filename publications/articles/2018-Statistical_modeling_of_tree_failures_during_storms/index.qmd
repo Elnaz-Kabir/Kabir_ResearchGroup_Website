@@ -1,0 +1,42 @@
+---
+title: "Statistical modeling of tree failures during storms"
+date: 2018-09-01
+author:
+  - name: Elnaz Kabir
+    url: https://elnaz-kabir.github.io/
+  - name: Seth Guikema
+  - name: Brian Kane
+categories:
+  - resilience
+  - storm impacts
+  - predictive analytics
+  - machine learning
+  - infrastructure reliability
+url_source: https://doi.org/10.1016/j.ress.2018.04.004
+journ: "Reliability Engineering & System Safety"
+volume: 177
+page: 68-79
+year: 2018
+doi: 10.1016/j.ress.2018.04.004
+image: stats.png
+---
+
+## Abstract
+
+The failure of trees during storms imposes significant economic and societal costs, particularly through damage to power infrastructure and disruptions to critical services. This study explores the predictability of tree failure using advanced statistical and machine learning models. Using a real-world dataset from Massachusetts, USA, multiple predictive approaches are evaluated, including logistic regression, classification and regression trees, multivariate adaptive regression splines, artificial neural networks, naive Bayes regression, random forests, boosting, and an ensemble model. Results demonstrate that ensemble learning methods provide improved out-of-sample predictive accuracy, highlighting the value of data-driven approaches for risk assessment and infrastructure resilience planning during extreme weather events.
+
+## Citation
+
+::: {.code-block}
+```bibtex
+@article{KabirGuikemaKane2018,
+  title   = {Statistical modeling of tree failures during storms},
+  author  = {Kabir, Elnaz and Guikema, Seth and Kane, Brian},
+  journal = {Reliability Engineering \& System Safety},
+  volume  = {177},
+  pages   = {68--79},
+  year    = {2018},
+  doi     = {10.1016/j.ress.2018.04.004}
+}
+```
+:::

@@ -1,0 +1,25 @@
+---
+title: "IDIS 450 — Syllabus"
+toc: true
+page-layout: full
+---
+
+## Subjects Covered in the Class
+
+::: {.table-responsive}
+| Week | Topic | Reading | Laboratory |
+|---:|---|---|---|
+| 1 | Introduction to Business Analytics |  | Intro. to Python |
+| 2 | Probability and Statistics Review | KJ Chapters 1–2 | Intro. to Python |
+| 3 | Data Pre-processing | KJ Chapter 3 | Data Pre-processing |
+| 4 | Descriptive Analytics and Visualization | KJ Chapter 4 | Data Visualization (MS Power BI) |
+| 5 | Sampling and Estimation | KJ Chapter 5 |  |
+| 6 | Statistical Inference | KJ Chapter 6 | Statistical Inference |
+| 7 | Linear Regression | KJ Chapter 7 | Linear Regression |
+| 8 | Logistic Regression | KJ Chapter 8 | Logistic Regression |
+| 9 | Classification and Regression Tree Models | KJ Chapter 11 | Decision Trees and Random Forest |
+| 10 | Artificial Neural Network | KJ Chapter 12 | Artificial Neural Network |
+| 11 | Support Vector Machine | KJ Chapter 13 | Support Vector Machine |
+| 12 | K-Nearest Neighbor | KJ Chapter 14 | K-Nearest Neighbor |
+| 13 | K-Means Clustering |  | K-Means Clustering |
+:::

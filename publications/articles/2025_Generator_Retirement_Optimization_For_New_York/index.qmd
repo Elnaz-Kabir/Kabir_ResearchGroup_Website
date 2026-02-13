@@ -1,0 +1,37 @@
+---
+title: "Generator Retirement Optimization For New York State Energy Transition: Balancing Cost, Reliability, and Emissions"
+date: 2025-03-06
+author:
+  - name: Seyed Ehsan Ahmadi
+  - name: Elnaz Kabir
+    url: https://elnaz-kabir.github.io/
+  - name: Mohammad Fattahi
+  - name: Mousa Marzband
+categories:
+  - energy transition
+  - power system planning
+  - renewable integration
+  - optimization
+  - grid reliability
+url_source: https://ieeexplore.ieee.org/
+journ: "2025 IEEE Texas Power and Energy Conference (TPEC)"
+year: 2025
+image: new_york.jpg
+---
+
+## Abstract
+
+New York State is undergoing a major transition toward renewable energy, targeting 70% renewable generation by 2030 and a net-zero carbon electricity system by 2040. Achieving these goals requires the systematic retirement of fossil fuel generators that have historically supported grid stability but contribute significantly to emissions. Their retirement introduces challenges related to reliability, renewable curtailment, congestion, and peak load management due to the intermittent nature of renewable energy sources. This work presents an optimization framework for determining an effective generator retirement schedule that jointly considers operational constraints, renewable integration, transmission limitations, and uncertainty in demand and weather. Using historical system data, the model evaluates multiple transition scenarios to balance cost, emissions reduction, and grid reliability, providing insights to support long-term decarbonization planning.
+
+## Citation
+
+::: {.code-block}
+```bibtex
+@inproceedings{AhmadiKabirFattahiMarzband2025,
+  title     = {Generator Retirement Optimization For New York State Energy Transition: Balancing Cost, Reliability, and Emissions},
+  author    = {Ahmadi, Seyed Ehsan and Kabir, Elnaz and Fattahi, Mohammad and Marzband, Mousa},
+  booktitle = {2025 IEEE Texas Power and Energy Conference (TPEC)},
+  year      = {2025}
+}
+```
+:::

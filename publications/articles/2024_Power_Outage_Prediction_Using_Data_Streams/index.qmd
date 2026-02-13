@@ -1,0 +1,40 @@
+---
+title: "Power Outage Prediction Using Data Streams: An Adaptive Ensemble Learning Approach with a Feature- and Performance-based Weighting Mechanism"
+date: 2024-03-01
+author:
+  - name: Elnaz Kabir
+    url: https://elnaz-kabir.github.io/
+  - name: Seth D. Guikema
+  - name: Steven M. Quiring
+categories:
+  - power system resilience
+  - outage prediction
+  - streaming data analytics
+  - ensemble learning
+  - machine learning
+url_source: https://doi.org/10.1111/risa.14309
+journ: "Risk Analysis"
+page: 1-19
+year: 2024
+doi: 10.1111/risa.14309
+image: power_out.avif
+---
+
+## Abstract
+
+Weather-driven hazards such as windstorms and heat events can significantly disrupt electric power systems, leading to widespread outages and operational challenges for utilities. Accurately estimating the probability distribution of customers without power using infrastructure, environmental, and weather data can support faster and more efficient restoration. However, traditional predictive models struggle to handle streaming data and model uncertainty arising from heterogeneous storm events. This study proposes an adaptive ensemble learning framework for data streams that uses a feature- and performance-based weighting mechanism to dynamically combine multiple base learners. Using a large real-world dataset of customer interruptions, the approach demonstrates improved predictive capability and adaptability, offering a practical tool for real-time outage prediction and resilience-focused decision support.
+
+## Citation
+
+::: {.code-block}
+```bibtex
+@article{KabirGuikemaQuiring2024Streaming,
+  title   = {Power Outage Prediction Using Data Streams: An Adaptive Ensemble Learning Approach with a Feature- and Performance-based Weighting Mechanism},
+  author  = {Kabir, Elnaz and Guikema, Seth D. and Quiring, Steven M.},
+  journal = {Risk Analysis},
+  pages   = {1--19},
+  year    = {2024},
+  doi     = {10.1111/risa.14309}
+}
+```
+:::

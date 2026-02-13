@@ -1,0 +1,66 @@
+---
+title: &TITLE Leila Talebi
+last: Talebi
+first: laila
+people_group: "gradstudent"
+email: "leila.talebi@tamu.edu"
+education:
+  - PH.D. Student, Electrical and Computer Engineering, Texas A&M University <br> M.S. Industrial Engineering, South Dokuta School of Mines, 2024 <br> B.S. Amirkabir University of Technology (Tehran Polytechnic), 2022
+subtitle: "PH.D. Student, Interdisciplinary Engineering, Texas A&M University"
+affiliation: Cornell University
+image: LeilaTalebi.jpg
+page-layout: full
+about: 
+  id: about
+  template: trestles
+  image-shape: round
+  image: LeilaTalebi.jpg
+  links:
+    - icon: envelope
+      text: Email
+      href: mailto:leila.talebi@tamu.edu
+    - icon: github
+      text: GitHub 
+      href: https://github.com/Leila-Talebi
+    - icon: linkedin  
+      text: LinkedIn
+      href: https://www.linkedin.com/in/leila-talebi/
+
+listing:
+  id: pubs
+  template: ../../_ejs/publications.ejs 
+  contents: 
+    - "../../../publications/**/*.qmd"
+    - "!../../../publications/_template/"
+  sort: "year desc"
+  # sort-ui: true
+  filter-ui: true
+  include:
+    author: *TITLE
+  fields: [publication, title, categories, image, date, author]
+---
+
+<hr>
+
+## About
+
+:::{#about}
+
+Leila Talebi is a Ph.D. student here at Texas A&M Univeristy. She works on multiple aspects of energy-oriented supply chains, including spatio-temporal optimization under electricity price uncertainty, renewable energy integration, carbon pricing, and resilience analysis. Her research leverages operations research and data analysis to develop decision-support frameworks at the interface between industry and the power grid.
+
+Outside of research, she enjoys cooking and going on long walks, which provide a relaxed counterbalance to her analytical work.
+
+
+## Education
+
+
+{{< meta education >}}
+
+:::
+
+<p>
+
+## Group Publications
+
+:::{#pubs}
+:::

@@ -1,0 +1,40 @@
+---
+title: "Techno-Economic Planning of Spatially-Resolved Battery Storage Systems in Renewable-Dominant Grids Under Weather Variability"
+date: 2025-09-02
+author:
+  - name: Seyed Ehsan Ahmadi
+  - name: Elnaz Kabir
+    url: https://elnaz-kabir.github.io/
+  - name: Mohammad Fattahi
+  - name: Mousa Marzband
+  - name: Dongjun Li
+categories:
+  - battery storage systems
+  - renewable energy integration
+  - stochastic optimization
+  - grid resilience
+  - energy transition
+url_source: https://doi.org/10.1016/j.apenergy.2025.121436
+journ: "Applied Energy"
+year: 2025
+doi: 10.1016/j.apenergy.2025.121436
+image: weather.jpg
+---
+
+## Abstract
+
+The ongoing energy transition is rapidly increasing the share of renewable energy sources (RES) in power systems. While beneficial for decarbonization, their intermittency and variability introduce operational challenges such as load shedding, congestion, and reliability risks. This study investigates the role of battery storage systems (BSS) in mitigating these challenges by optimally balancing supply and demand. We develop a two-stage stochastic optimization framework that determines the optimal location, size, and technology type of battery storage, with the second stage modeling hourly system operations over an entire year. Unlike prior work, the model integrates detailed technical and economic characteristics of battery technologies. Using the New York State power system as a case study and incorporating historical load and weather data from 1980–2019, the framework explicitly accounts for uncertainty in renewable generation and demand. Results highlight how spatially resolved storage planning enhances reliability and supports renewable integration under weather variability.
+
+## Citation
+
+::: {.code-block}
+```bibtex
+@article{AhmadiKabirFattahiMarzbandLi2025,
+  title   = {Techno-Economic Planning of Spatially-Resolved Battery Storage Systems in Renewable-Dominant Grids Under Weather Variability},
+  author  = {Ahmadi, Seyed Ehsan and Kabir, Elnaz and Fattahi, Mohammad and Marzband, Mousa and Li, Dongjun},
+  journal = {Applied Energy},
+  year    = {2025},
+  doi     = {10.1016/j.apenergy.2025.121436}
+}
+```
+:::

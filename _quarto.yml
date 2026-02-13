@@ -5,12 +5,12 @@ project:
     - "!publications/_template/"
     - "!people/_template/"
 
-pagetitle: "{{< meta title >}} | Srikrishnan Group"
-author-meta: "Vivek Srikrishnan"
+pagetitle: "{{< meta title >}} | Elnaz Group"
+author-meta: "Elnaz Kabir"
 
 website:
-  title: "Srikrishnan Group"
-  description: "The Srikrishnan Research Group studies how to manage climate and environmental risks faced by complex, coupled natural-human systems."
+  title: "Kabir Group"
+  description: "The Kabir Research Group studies Sustainable Energy Resilience"
   site-url: "https://viveks.bee.cornell.edu"
   repo-url: "https://github.com/srikrishnan-lab/srikrishnan-lab.github.io"
   favicon: assets/logos/favicon.png
@@ -20,14 +20,14 @@ website:
   page-footer: 
     background: "#F7F7F7"
     left: |
-      <span class="faux-block">{{< fa brands creative-commons >}} {{< var years >}} Vivek Srikrishnan</span>
+      <span class="faux-block">{{< fa brands creative-commons >}} {{< var years >}} Elnaz Kabir</span>
       <span class="faux-block">All content licensed under<br>[{{< fa brands creative-commons >}} {{< fa brands creative-commons-by >}} Creative Commons CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)</span> 
     center: Made with
       [![](https://quarto.org/quarto.png){fig-alt="Quarto" width=65px}](https://quarto.org/)<br>
       See the [About Page](/about.qmd) for credit information.
     right:
       - icon: github
-        href: https://github.com/srikrishnan-lab/srikrishnan-lab.github.io
+        href: https://github.com/Elnaz-Kabir
   navbar:
     pinned: true
     search: true
@@ -40,14 +40,12 @@ website:
         href: publications/index.qmd
       - text: "Teaching"
         href: teaching/index.qmd
-      - text: "Lab Manual"
-        href: lab-manual/index.html
       - text: "Join Us"
         href: join/index.qmd
       - text: "Contact"
         href: contact/index.qmd
       - text: "Github"
-        href: https://github.com/srikrishnan-lab
+        href: https://github.com/Elnaz-Kabir
 
 format:
   html:

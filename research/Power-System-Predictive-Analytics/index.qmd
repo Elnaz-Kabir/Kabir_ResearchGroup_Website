@@ -1,0 +1,27 @@
+---
+title: Power System Predictive Analytics
+alias: &ALIAS climate-risks
+image: power_research.png
+listing:
+  id: pubs
+  template: ../../_ejs/publications.ejs 
+  contents: 
+    - "../../../publications/articles/**/*.qmd"
+    - "../../../publications/unpublished/**/*.qmd"
+    - "!../../../publications/_template/"
+  sort: "year desc"
+  # sort-ui: true
+  filter-ui: true
+  include:
+    categories: "climate*"
+  fields: [publication, title, categories, image, date, author]
+---
+
+![](power_research.png){width=80% fig-align="left"}
+
+Predictive analytics is essential for power systems, as it is for any complex system with high variability and uncertainty, because operators and planners must make decisions before key conditions are fully known. This is especially true for today’s grid, where weather drives rapid changes in renewable generation and demand, electricity prices are increasingly volatile, and extreme events can trigger widespread outages and difficult restoration decisions. In this area, our group develops physics-informed and data-driven forecasting models that produce accurate deterministic and probabilistic predictions for renewable output, load, prices, and power outages. We use these predictions to support more reliable operations, resilience planning, and uncertainty-aware restoration and investment decisions.
+
+## Selected Publications
+
+:::{#pubs}
+:::

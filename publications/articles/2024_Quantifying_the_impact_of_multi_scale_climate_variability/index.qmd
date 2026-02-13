@@ -1,0 +1,42 @@
+---
+title: "Quantifying the impact of multi-scale climate variability on electricity prices in a renewable-dominated power grid"
+date: 2024-01-01
+author:
+  - name: Elnaz Kabir
+    url: https://elnaz-kabir.github.io/
+  - name: Vivek Srikrishnan
+  - name: M. Vivienne Liu
+  - name: Scott Steinschneider
+  - name: C. Lindsay Anderson
+categories:
+  - renewable energy systems
+  - climate variability
+  - electricity markets
+  - grid resilience
+  - energy analytics
+url_source: https://doi.org/10.1016/j.renene.2024.120013
+journ: "Renewable Energy"
+page: 120013
+year: 2024
+doi: 10.1016/j.renene.2024.120013
+image: power_grid.webp
+---
+
+## Abstract
+
+The variability and intermittency of renewable energy sources introduce operational challenges for modern power systems, including curtailment and electricity price volatility. In systems with high renewable penetration, co-variability between renewable generation and electricity demand can intensify these effects. This study examines how interactions among renewable resources, load variability, and system constraints across multiple spatial and temporal scales influence electricity price dynamics. Using the New York State power system as a case study, the work characterizes spatiotemporal co-variability in renewable supply and demand and evaluates the role of climatic variability in shaping market outcomes. A reduced-form representation of the power system is developed to capture these dynamics, providing insights into how climate-driven variability propagates through renewable-dominated grids and affects price behavior.
+
+## Citation
+
+::: {.code-block}
+```bibtex
+@article{KabirSrikrishnanLiuEtAl2024,
+  title   = {Quantifying the impact of multi-scale climate variability on electricity prices in a renewable-dominated power grid},
+  author  = {Kabir, Elnaz and Srikrishnan, Vivek and Liu, M. Vivienne and Steinschneider, Scott and Anderson, C. Lindsay},
+  journal = {Renewable Energy},
+  pages   = {120013},
+  year    = {2024},
+  doi     = {10.1016/j.renene.2024.120013}
+}
+```
+:::
