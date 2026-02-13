@@ -18,25 +18,7 @@ listing:
     filter-ui: true
     sort-ui: true
     fields: [image, title, publication, author, url_source]
-    categories: true  
-  - id: reports
-    template: ../_ejs/publications.ejs
-    contents: reports/*/index.qmd
-    sort: "year desc"
-    page-size: 30
-    filter-ui: true
-    sort-ui: true
-    fields: [image, title, publication, author, url_source]
-    categories: true  
-  - id: books
-    template: ../_ejs/publications.ejs
-    contents: books/*/index.qmd
-    sort: "year desc"
-    page-size: 30
-    filter-ui: true
-    sort-ui: true
-    fields: [image, title, publication, author, url_source]
-    categories: true  
+    categories: true     
   - id: unpublished
     template: ../_ejs/publications.ejs
     contents: unpublished/*/index.qmd
@@ -72,15 +54,6 @@ page-layout: full
 :::{#conferences}
 :::
 
-## Reports
-
-:::{#reports}
-:::
-
-## Books
-
-:::{#books}
-:::
 
 ## Unpublished
 

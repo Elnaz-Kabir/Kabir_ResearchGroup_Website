@@ -1,0 +1,22 @@
+---
+title: "Forecasting Bus-Level Load Time Series on Synthetic Grids Using Weather-Informed Deep Learning"
+author: 
+  - name: Elnaz Kabir
+  - name: Farnaz Safdarian
+  - name: Seyedmahdi Kazemirazi
+  - name: Thomas Chen
+  - name: Diana Wallison
+  - name: Thomas J. Overbye
+categories:
+    - Load forecasting
+    - Load Modelling
+    - Load Time Series
+    - Non-linear bio-inspired deep learning
+    - Power Systems
+    - Synthetic grids
+    - Weather impact
+---
+
+## Abstract
+
+This paper proposes a methodology to forecast synthetic hourly time series of bus-level load based on publicly available data of load, customer behavior and weather measurements using a novel non-linear, hybrid, bio-inspired deep learning_based Recurrent Neural Network (RNN). The proposed model reflect human temporal behavior, selective forgetting, and circadian behavioral patterns through gated recurrent dynamics and cyclical time encoding. The main advantage of the proposed strategy is that the load can be predicted in bus level for any future time with available weather forecast data. The created load can be used on synthetic grids for power system studies such as planning  and market analysis without any concerns of disclosing protected data. A Synthetic grid over Texas footprint in the United States with 6717 buses is used as the case study, and the proposed load forecast strategy is compared to the actual load in the same geographical footprint with the same sub-areas, and shows around 95% accuracy for the aggregated load

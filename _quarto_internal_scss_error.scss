@@ -1039,57 +1039,34 @@ $theme-name: null !default;
 
 // quarto-scss-analysis-annotation { "origin": "Defaults from user-defined SCSS" }
 
+/* Kabir Modern theme for Quarto
+   - Modern academic lab look: deep-ink + teal accent + warm sand
+   - Typography: Inter (body) + Source Serif 4 (headings)
+   - Uses CSS variables for design tokens and responsive utilities
+*/
 
-// Colors
-$darkgray: #222222; 
-$cornellred: #b31b1b;
-$lightred: #DF1E12;
-$lightgray: #f7f7f7;
-$seagray: #9fad9f;
-$blue: #006699;
-$orange: #D47500;
-$warmgray: #A2998B;
 
-// Fonts
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Source+Serif+4:wght@400;600;700&display=swap');
 
-$font-family-sans-serif: "Fira Sans", sans-serif !default;
-$font-family-monospace: "Fira Code", monospace !default;
-$headings-font-family: "Playfair Display", serif !default;
-$headings-font-weight: 600 !default;
-
-$navbar-font-family: "ApfelGrotezk" !default;
-$toc-font-family: "ApfelGrotezk" !default;
-$footer-font-family: "Fira Sans" !default;
-
-// body
-$body-color: $darkgray !default;
-
-// links
-$link-color: $blue !default;
-$link-decoration: none !default;
-$link-hover-color: $lightred !default;
-$link-hover-decoration: underline !default;
-
-// Inline code
-$code-bg: $darkgray !default;
-$code-color: $lightgray !default;
-
-// Code copy
-$btn-code-copy-color-active: $lightred !default;
-
-// TOC
-$toc-color: $lightred;
-$toc-font-size: 1em;
-
-// Navbar
-$navbar-bg: $lightgray !default;
-$navbar-fg: $darkgray !default;
-$navbar-hl: $cornellred !default;
-
-// Footer
-$footer-bg: $lightgray !default;
-$footer-fg: $darkgray !default;
+:root {
+  /* Palette: refined modern academic */
+  --bg: #fbfcfe; /* very light cool background */
+  --surface: #ffffff;
+  --muted-surface: #f6f8fb;
+  --ink: #071226; /* deep indigo/ink */
+  --muted: #6b7a86; /* softer gray-blue */
+  --accent: #0aa89e; /* fresh teal */
+  --accent-2: #077b71; /* deep teal */
+  --accent-3: #d6a85a; /* warm gold accent */
+  --border: rgba(7,18,38,0.08);
+  --shadow: 0 8px 24px rgba(7,18,38,0.06);
+  --glass-bg: rgba(255,255,255,0.72);
+  --code-bg: #0f1724; /* dark code surface */
+  --code-fg: #e6eef0;
+  --max-width: 84ch;
+  --content-padding: 1.25rem;
+  --radius: 14px;
+}
 
 
 // Heading font size customization
@@ -12870,526 +12847,284 @@ main.quarto-banner-title-block > section:first-child > h4 {
   justify-content: right;
 }
 
-/* -- fonts * --*/
-@font-face {
-    font-family: 'ApfelGrotesk';
-    src: url(./assets/fonts/ApfelGrotezk/ApfelGrotezk-Regular.woff2) format('woff2');
-    font-weight: 300;
-    font-style: normal;
+
+/* Typography */
+html, body {
+  font-family: 'Inter', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  color: var(--ink);
+  background-color: var(--bg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-h1, .h1 {
-    font-family: $headings-font-family;
-    font-weight: $headings-font-weight;
-
+h1,h2,h3,h4,h5 {
+  font-family: 'Source Serif 4', Georgia, serif;
+  color: var(--ink);
+  margin-top: 0;
 }
 
-h2, .h2 {
-    font-family: $headings-font-family;
-    font-weight: $headings-font-weight;
+h1 { font-size: 2.25rem; line-height: 1.05; letter-spacing: -0.02em; }
+h2 { font-size: 1.5rem; margin-top: 1.25rem; }
+h3 { font-size: 1.125rem; }
+
+/* Layout container */
+.main-container, .page > .container {
+  max-width: var(--max-width);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--content-padding);
+  padding-right: var(--content-padding);
 }
 
-// Body
-body {
-    -webkit-font-smoothing: antialiased;
-}
-
-
-// Shrink blocks of code
-pre.text, pre.sourceCode, .cell-output pre {
-    font-size: 0.775em;
-}
-
+/* Navigation bar: sticky, glass blur */
 .navbar {
-    font-family: $navbar-font-family;
-    
+  position: sticky;
+  top: 0;
+  z-index: 60;
+  backdrop-filter: blur(6px) saturate(120%);
+  background: linear-gradient(180deg, var(--glass-bg), rgba(255,255,255,0.65));
+  border-bottom: 1px solid var(--border);
+  box-shadow: none;
+}
+.navbar .navbar-brand, .navbar .nav-link { font-weight: 600; color: var(--ink); }
+.navbar .nav-link:hover { color: var(--accent); text-decoration: none; }
+.navbar .nav-link.active { color: var(--accent-2); border-bottom: 2px solid var(--accent); padding-bottom: 0.6rem; }
+
+/* Footer */
+.nav-footer { background: transparent; border-top: 1px solid var(--border); padding: 1.25rem 0; }
+.nav-footer a { color: var(--muted); }
+
+/* Cards (people, publications, projects) */
+.card, .listing-box, .quarto-listing-item {
+  background: var(--surface);
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  padding: 1rem;
+  transition: transform 200ms ease, box-shadow 200ms ease;
+}
+.card:hover, .listing-box:hover, .quarto-listing-item:hover { transform: translateY(-6px); box-shadow: 0 10px 30px rgba(7,16,40,0.08); }
+
+.listing-box-title, .listing-pub-title { font-weight: 700; color: var(--ink); font-family: 'Source Serif 4', serif; }
+.listing-box-subtitle, .listing-pub-author { color: var(--muted); font-size: 0.95rem; }
+
+/* People grid */
+.quarto-listing-grid { display: grid; gap: 1.5rem; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); }
+
+/* Strong people card visual: left-aligned image + content */
+.listing-box {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(180deg, var(--surface), rgba(246,248,251,0.35));
+  border-left: 6px solid var(--accent);
+  overflow: hidden;
+  padding: 0;
 }
 
-// Put all the icons in a single row in the hamburger menu
-.navbar-nav.navbar-nav-scroll.ms-auto {
-    flex-direction: row;
+.quarto-grid-item.card { display: flex; flex-direction: column; height: 100%; }
+
+.listing-box .card-body {
+  padding: 1rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  flex: 1 1 auto;
 }
 
-#TOC {
-    font-family: $toc-font-family;
-    padding-bottom: 0.1em;
-    font-weight: 300;
-
-    .active {
-        font-weight: 400;
-    }
-
-    #toc-title {
-        font-weight: 600;
-    }
+/* Desktop: horizontal layout */
+@media (min-width: 900px) {
+  .listing-box { flex-direction: row; align-items: center; }
+  .listing-box .card-img-top { flex: 0 0 auto; }
+  .listing-box-image { width: 160px; height: 160px; border-radius: 12px; object-fit: cover; margin: 1rem; flex: 0 0 160px; }
+  .listing-box .card-body { padding: 1rem 1.25rem 1rem 0.5rem; }
 }
 
-.sidebar nav[role="doc-toc"]>ul li a {
-    padding-top: 0.25rem;
-    padding-bottom: 0.25rem;
+.listing-box-figure { overflow: hidden; }
+.quarto-listing-container-grid .listing-box-title { font-size: 1rem; line-height: 1.12; margin: 0; font-family: 'Source Serif 4', serif; color: var(--ink); font-weight: 600; }
+
+/* Ensure listing titles don't scale unexpectedly elsewhere */
+.quarto-listing .listing-box-title { font-size: 1rem; }
+.listing-box-subtitle { color: var(--muted); font-size: 0.95rem; margin: 0.05rem 0 0; }
+.listing-box-education { color: var(--muted); font-size: 0.88rem; margin: 0; }
+.listing-box-meta { margin-top: auto; display:flex; gap:0.5rem; align-items:center; }
+.listing-box .btn { font-size: 0.92rem; padding: 0.5rem 0.7rem; border-radius: 10px; }
+.listing-box .profile-links { display:flex; gap:0.5rem; align-items:center; }
+
+/* Photo avatar overlay for small cards */
+.listing-box .avatar { width:72px; height:72px; border-radius:999px; object-fit:cover; border: 2px solid rgba(255,255,255,0.9); box-shadow: 0 6px 18px rgba(7,18,38,0.08); }
+
+@media (max-width: 700px) {
+  .listing-box-image { height: 180px; }
+  .listing-box .avatar { width:56px; height:56px; }
 }
 
-.quarto-category {
-    color: $cornellred;
+/* Teaching course cards */
+.teaching .course-entry { display: grid; grid-template-columns: 120px 1fr; gap: 1rem; align-items: start; }
+.teaching .logo img { border-radius: 8px; width: 100%; height: auto; }
+.teaching .course-chip { display: inline-block; background: var(--muted-surface); color: var(--muted); padding: 0.25rem 0.5rem; border-radius: 999px; font-size: 0.85rem; }
+.teaching .course-title { font-family: 'Source Serif 4', serif; font-size: 1.125rem; }
+.teaching .course-cta a { background: var(--accent); color: white; padding: 0.5rem 0.8rem; border-radius: 8px; text-decoration: none; font-weight:600; }
+
+/* Syllabus page and table improvements */
+.syllabus-page, .teaching .syllabus {
+  margin-top: 1.25rem;
 }
 
-.quarto-category a {
-    font-size: 1.2em;
-    font-weight: 600;
+.syllabus-card {
+  background: linear-gradient(180deg, var(--surface), rgba(246,248,251,0.35));
+  border-radius: 14px;
+  border: 1px solid rgba(7,18,38,0.06);
+  padding: 1rem;
+  box-shadow: 0 8px 20px rgba(7,18,38,0.04);
 }
 
-// Blog categories
-#quarto-margin-sidebar {
-    .quarto-listing-category-title {
-        margin-left: 0.5em;
-    }
-
-    .quarto-listing-category {
-        font-family: $toc-font-family;
-        font-weight: 300;
-        font-size: 1em;
-        line-height: 1.1;
-        padding-left: 0.6rem;
-        margin-left: 0.5em;
-        border-left: 1px solid $gray-200;
-
-        .category {
-            padding-bottom: 0.5rem;
-        }
-
-        .active {
-            font-weight: 400;
-            color: $orange;
-        }
-
-        .quarto-category-count {
-            font-weight: 200;
-            font-size: 0.8em;
-            color: $gray-600;
-        }
-    }
+.syllabus-card .table-responsive {
+  overflow: auto;
+  border-radius: 10px;
 }
 
-.nav-footer {
-    align-items: flex-start;  // Align all flex items to the top
-    flex-wrap: wrap;
-    border: 0 !important;
-    min-height: 3em;
-    font-family: $footer-font-family;
-
-    a {
-        color: $blue;
-    }
-
-    .faux-block {
-        display: block;
-        padding-bottom: 0.4em;
-    }
-
-    .fingerprint {
-        font-family: $font-family-monospace;
-        font-size: 0.8em;
-    }
-
-    // In the default Quarto template, .nav-footer-center has position: absolute 
-    // turned on, which makes the div not be a flex item
-    // This changes that so that it *is* a flex item
-    .nav-footer-center {
-        text-align: center;
-        position: inherit;
-        margin-top: 0;
-
-        @media (max-width: map-get($grid-breakpoints, md)) {
-            margin-top: 0.0em;
-            margin-bottom: 1.5em;
-        }
-    }
-
-    // When the screen is medium or smaller, make each footer chunk be 100% width 
-    // and centered; otherwise make them be 33% width and left/right/centerd
-    .nav-footer-left,
-    .nav-footer-right,
-    .nav-footer-center {
-        text-align: center;
-        width: 100%;
-        min-height: 2em;
-    }
-
-    @media (min-width: map-get($grid-breakpoints, md)) {
-        .nav-footer-left {
-            text-align: left;
-        }
-
-        .nav-footer-right {
-            text-align: right;
-        }
-
-        .nav-footer-left,
-        .nav-footer-right,
-        .nav-footer-center {
-            flex: 1 1 33%;
-        }
-    }
+.syllabus-card table {
+  width: 100%;
+  border-collapse: collapse;
+  background: transparent;
 }
 
-#title-block-header {
-    .quarto-title-banner {
-        font-family: $headings-font-family;
-        text-align: left;
-    }
-
-    .title {
-        font-size: 2.0em;
-    }
-
-    .subtitle {
-        font-size: 1.3  em;
-    }
+.syllabus-card thead th {
+  position: sticky;
+  top: 0;
+  background: linear-gradient(180deg, var(--muted-surface), var(--muted-surface));
+  padding: 0.75rem 1rem;
+  text-align: left;
+  font-weight: 700;
+  border-bottom: 1px solid rgba(7,18,38,0.06);
 }
 
+.syllabus-card tbody tr:nth-child(odd) { background: rgba(10,168,158,0.02); }
+.syllabus-card tbody td { padding: 0.65rem 1rem; border-top: 1px solid rgba(7,18,38,0.04); vertical-align: middle; }
 
+.syllabus-card tbody td .muted { color: var(--muted); }
 
-// Research
-.quarto-title-block {
-
-    .quarto-title .quarto-categories {
-        padding-bottom: 0;
-        flex-wrap: wrap;
-        row-gap: 0.4em;
-    }
-
-    .project-details {
-        background-color: $cornellred;
-        padding: 0.75em;
-        margin: 1em 0;
-    }
-
-    .quarto-title-meta-heading.manual {
-        margin-top: 2em !important;
-    }
-
-    .project-links {
-        padding: 0;
-        margin-bottom: 0;
-    }
-
-    .project-link {
-        display: inline-block;
-        white-space: nowrap;
-        padding: 0 1em 0 0;
-        font-weight: bold;
-    }
-
+/* Mobile: compact rows and stacked labels */
+@media (max-width: 700px) {
+  .syllabus-card thead { display: none; }
+  .syllabus-card tbody tr { display: block; margin-bottom: 0.6rem; border-radius: 10px; overflow: hidden; border: 1px solid rgba(7,18,38,0.04); }
+  .syllabus-card tbody td { display: block; padding: 0.6rem; border: none; }
+  .syllabus-card tbody td::before { content: attr(data-label); display: block; font-weight: 700; margin-bottom: 0.35rem; color: var(--muted); }
 }
 
-.back-nav {
-    margin-bottom: 1.5em;
+/* Make syllabus headings prominent */
+.teaching h1, .teaching h2 { color: var(--ink); }
+
+
+/* Publications */
+.listing-pub { display: flex; gap: 0.75rem; align-items: flex-start; }
+.listing-pub .meta { color: var(--muted); font-size: 0.95rem; }
+.listing-pub .links-row a { margin-right: 0.6rem; color: var(--accent); font-weight:600; }
+
+/* Tables */
+table { width: 100%; border-collapse: collapse; background: var(--surface); border-radius: 12px; overflow: hidden; }
+table thead th { background: var(--muted-surface); text-align: left; padding: 0.6rem 0.8rem; font-weight:700; }
+table tbody td { padding: 0.6rem 0.8rem; border-top: 1px solid var(--border); }
+@media (max-width: 700px) { .table-responsive { overflow-x: auto; } }
+
+/* Code blocks and inline code */
+pre.sourceCode, pre.text, .cell-output pre { background: var(--code-bg); color: var(--code-fg); border-radius: 10px; padding: 1rem; overflow: auto; border: 1px solid rgba(255,255,255,0.03); }
+code { background: rgba(11,18,32,0.06); padding: 0.12rem 0.26rem; border-radius: 6px; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, "Roboto Mono", "Fira Code", monospace; }
+.code-tools { color: var(--muted); }
+
+/* TOC (sidebar) */
+#TOC { font-family: 'Inter', sans-serif; background: transparent; }
+.sidebar nav[role="doc-toc"] { position: sticky; top: 6rem; padding: 0.5rem; }
+.sidebar nav[role="doc-toc"] a { display:block; padding: 0.35rem 0.5rem; color: var(--muted); border-left: 3px solid transparent; }
+.sidebar nav[role="doc-toc"] a.active { color: var(--ink); border-left-color: var(--accent); background: linear-gradient(90deg, rgba(17,139,130,0.06), transparent); }
+
+/* Buttons and links */
+a, .btn { color: var(--accent); }
+.btn-primary { background: var(--accent); border: none; color: white; padding: 0.45rem 0.8rem; border-radius: 8px; }
+
+/* Micro-interactions */
+* { transition: color 160ms ease, background-color 160ms ease, border-color 160ms ease; }
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
+
+/* Utilities */
+.sr-only { position:absolute !important; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); border:0; }
+
+/* Small responsive tweaks */
+@media (max-width: 780px) {
+  h1 { font-size: 1.5rem; }
+  .teaching .course-entry { grid-template-columns: 1fr; }
 }
 
-.research {
-    .back-nav a {
-        color: shift-color($lightgray, -50%);
-    }
+/* Provide a gentle entrance class for sections; JS will add reveal classes */
+.reveal { opacity: 0; transform: translateY(10px); transition: opacity 420ms ease, transform 420ms ease; }
+.reveal.is-visible { opacity: 1; transform: translateY(0); }
 
-    .paper-title {
-        color: $lightgray;
-    }
-    
-    .quarto-title .quarto-categories .quarto-category {
-        background-color: rgba($lightgray, 0.7);
-        color: $cornellred;
-        font-size: 0.65em;
-        font-weight: 500;
-        opacity: 1;
-    }
-
-    .project-categories {
-        display: flex;
-        flex-wrap: wrap;
-        margin: 0.35em 0 0.35em;
-        padding-top: 0.35em;
-        padding-left: 0.5em;
-        padding-bottom: 0;
-        row-gap: 0.4em;
-        column-gap: 0.4em;
-        font-family: $headings-font-family;
-
-        .project-category {
-            padding: 0.25em 0.75em 0.25em 0em;
-            font-size: 0.7em;
-            text-transform: uppercase;
-        }
-    }
+/* Listing item reveal (stagger friendly) */
+.quarto-listing-grid .listing-box, .quarto-listing-grid .quarto-listing-item, .quarto-listing-grid .card {
+  opacity: 0; transform: translateY(6px); transition: opacity 380ms ease, transform 380ms ease; will-change: opacity, transform;
+}
+.quarto-listing-grid .listing-box.is-visible, .quarto-listing-grid .quarto-listing-item.is-visible, .quarto-listing-grid .card.is-visible {
+  opacity: 1; transform: translateY(0);
 }
 
-.project-list {
-    ul {
-        list-style: none;
-        padding: 0;
-        margin: 0 0 2em;
+/* Hover polish for listing box */
+.listing-box { transition: transform 220ms cubic-bezier(.2,.9,.2,1), box-shadow 220ms ease; }
+.listing-box:hover { transform: translateY(-8px) scale(1.01); box-shadow: 0 18px 36px rgba(7,18,38,0.08); }
 
-        li.project {
-            margin-bottom: 2.5em;
-            border-left: 6px solid shift-color($red, -90%);
-
-            p {
-                margin: 0;
-            }
-        }
-    }
-
-    .project-content {
-        padding-left: 0.5em;
-
-        .status {
-            font-size: 1rem;
-            font-weight: 250;
-            padding: 0.2em;
-            margin-right: 0.5em;
-        }
-    }
-
-    ul.project-links {
-        margin-bottom: 0;
-    }
-
-    .project-details-listing {
-        margin-top: 0.8em;
-        background-color: shift-color($red, -90%);
-        font-size: 0.9rem;
-
-        @media (max-width: map-get($grid-breakpoints, md)) {
-            font-size: 0.95rem;
-        }
-
-        .project-link {
-            display: inline-block;
-            white-space: nowrap;
-            padding: 0.5em 0.5em 0.5em 1em;
-        }
-
-        .details {
-            background-color: $red;
-            padding-right: 1.5em;
-
-            a {
-                color: #FFFFFF;
-            }
-        }
-    }
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .reveal, .quarto-listing-grid .listing-box, .quarto-listing-grid .quarto-listing-item, .quarto-listing-grid .card { transition: none !important; transform: none !important; }
 }
 
-.teaching {
-    .course-entry {
-        display: flex;
-        flex-direction: row;
-        font-family: $headings-font-family;
-        line-height: 1.3;
-        margin-bottom: 3em;
-        column-gap: 0.7em;
+/* Keep code block copy button visible and styled */
+.code-tools .btn { background: rgba(255,255,255,0.02); border-radius: 8px; padding: 6px 8px; }
 
-        .body {
-            flex: 1 1 auto;
-        }
+/* Ensure listings adapt but preserve Quarto structure */
+.quarto-listing-item .card-body { padding: 0; }
 
-        .logo {
-            flex: 0 0 140px;
+/* Legacy override: replace old Cornell-red accents with new palette and improve people/publication visuals */
 
-            img {
-                width: 100%;
-            }
-        }
+/* Replace legacy red categories */
+.quarto-category { color: var(--accent-2) !important; }
+.quarto-category a { color: var(--accent-2) !important; }
 
-        .course-title {
-            font-weight: 500;
-            font-size: 1.25em;
-            margin-bottom: 0.2em;
-        }
-        
-        .course-details {
-            font-weight: 300;
-            font-size: 0.9em;
-            margin-bottom: 0.5em;
-            color: $gray-800;
-        }
-
-        .course-description {
-            font-weight: 300;
-            font-size: 1.1em;
-            margin-bottom: 0.5em;
-        }
-
-        .course-role {
-            font-weight: 500;
-        }
-
-        ul.course-semesters {
-            list-style: none;
-            padding: 0;
-            margin-bottom: 0;
-
-            li {
-                display: inline-block;
-                white-space: nowrap;
-                background-color: $orange;
-                margin: 0 0.2em 0.4em 0;
-                padding: 0.2em 0.4em;
-                font-size: 0.85em;
-                border-radius: 0.25rem;
-
-                &.no-link {
-                    background-color: $white;
-                    border: 1px solid $black;
-                }
-
-                a {
-                    color: $white;
-                }
-            }
-        }
-    }
+/* Title category badges */
+.quarto-title .quarto-categories .quarto-category {
+  background: rgba(10,168,158,0.06);
+  color: var(--accent-2);
+  padding: 0.18rem 0.5rem;
+  border-radius: 8px;
+  font-weight: 600;
 }
 
-.cv-download {
-    font-family: $headings-font-family;
-    background-color: #771C6D;
-    border-color: #771C6D;
-    color: $white;
+/* People listing overrides */
+.listing-box { border-radius: 12px; overflow: hidden; border: 1px solid rgba(7,18,38,0.06); }
+.listing-box .card-inner { background: linear-gradient(180deg, var(--surface), rgba(246,248,251,0.35)); }
+.listing-box-subtitle { color: var(--muted); }
+.listing-box-education { color: var(--muted); }
 
-    &:hover {
-        background-color: $red;
-        border-color: $red;
-        color: $white;
-    }
-}
+/* Publication overrides */
+.listing-pub-title a { color: var(--ink); }
+.listing-pub-author { color: var(--muted); }
+.listing-pub-journal { color: var(--muted); }
+.listing-pub-number { color: var(--accent); }
 
-.code-tools-button {
-    position: relative;
-    left: 5em;
+/* Listing buttons */
+.listing-box-button a[role="button"] { background: transparent; color: var(--ink); border: 1px solid rgba(7,18,38,0.06); }
 
-    @media (max-width: map-get($grid-breakpoints, md)) {
-        left: 0;
-    }
-}
+/* Small link underline treatment */
+a { color: var(--accent); }
+a:hover { text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 3px; }
 
-/* -- people --*/
+/* Make CTA and primary buttons use accent */
+.btn-primary, .btn-primary:visited { background: var(--accent); color: #fff; border: none; }
 
-.listing-box:hover {
-    border-color: $primary;
-    background-color: transparent;
-    box-shadow: 0px 1px 2px rgba(0,0,0,0.1), 
-              0px 2px 4px rgba(0,0,0,0.1), 
-              0px 4px 8px rgba(0,0,0,0.1), 
-              0px 8px 16px rgba(0,0,0,0.1);
-  }
-  
-  .listing-box-title {
-    max-width: 80%;
-    margin-top: 10px;
-    margin-bottom: 12px;
-    color: #222222;
-    font-size: 18px;
-    line-height: 1.2;
-    font-weight: 700;
-  }
-  
-  .listing-box-subtitle {
-    /*    margin-top: auto;*/
-    //font-family: 'Bebas Neue', sans-serif;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 12px;
-    margin-bottom: 0;
-    color: #b31b1b;
-    line-height: 1.5;
-  }
-  
-  .listing-box-education {
-    margin-bottom: 0;
-    color: #222222;
-    font-size: 12px;
-    line-height: 1.5;
-  }
-  
-  .listing-box-button a[role="button"] {
-    width: 140px;
-    min-height: 150px;
-    color: rgb(55, 58, 60);
-    text-align: center;
-    border: 1px solid rgb(222, 226, 230);
-    border-radius: 10px;
-    margin-right: 20px;
-    margin-bottom: 30px;
-    margin-top: 10px;
-    font-size: 0.9em;
-  }
-  
-  .listing-box-section {
-    margin-bottom: 30px;
-    box-sizing: border-box;
-  }
-  
-  
-  .listing-box-image {
-    ?
-  }
-  
-  .quarto-listing-cols-3 {
-      padding-left: 10px;
-      padding-right: 10px;
-  
-  }
-  
-  .quarto-listing-cols-4 {
-      padding-left: 10px;
-      padding-right: 10px;
-  
-  }
-  
-  .anchored {
-    padding-top: 8px;
-    padding-left: 10px;
-  }
-  
-  /* -- publications --*/
+/* subtle card highlight */
+.card { background: linear-gradient(180deg, var(--surface), rgba(246,248,251,0.35)); }
 
-.listing-pub-title a {
-    /*font-family: 'Bebas Neue', sans-serif;
-    max-width: 80%;
-    margin-top: 10px;
-    margin-bottom: 12px;
-    color: #222;
-    line-height: 1.2;*/
-    font-size: 18px;
-    font-weight: 700; 
-  }
-  
-  .listing-pub-author {
-    color: #757883;
-    font-size: 15px;
-    margin-bottom: 6px;
-    /*line-height: 1.5;*/
-  }
-  
-  .listing-pub-number {
-    font-weight: 700; 
-    font-size: 15px;
-  
-  }
-  
-  .listing-pub-journal {
-    color: #757883;
-    font-size: 17px;
-    margin-bottom: 8px;
-  }
-  
-  .listing-pub-url {
-    font-size: 13px;
-  
-  }
+/* End of kabir-modern.scss */
 
-  div.quarto-about-trestles {
-    padding-bottom: 5em;
-  }
 
 // quarto-scss-analysis-annotation { "origin": null }

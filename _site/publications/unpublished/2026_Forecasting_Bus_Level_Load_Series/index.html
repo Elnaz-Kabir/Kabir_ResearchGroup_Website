@@ -8,7 +8,7 @@
 
 <meta name="author" content="Elnaz Kabir">
 
-<title>Uncertainty &amp; Risk Aware Decision Making | Elnaz Group – Kabir Group</title>
+<title>Forecasting Bus-Level Load Time Series on Synthetic Grids Using Weather-Informed Deep Learning | Elnaz Group – Kabir Group</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -24,28 +24,26 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../../">
-<link href="../../assets/logos/favicon.png" rel="icon" type="image/png">
-<script src="../../site_libs/quarto-listing/list.min.js"></script>
-<script src="../../site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
-<script src="../../site_libs/quarto-html/popper.min.js"></script>
-<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-c4702b6e67f8e19bc06513fd91c1011e.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-6c8d328bef3a44df5c2a5fd81e00f2c8.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/quarto-contrib/fontawesome6-1.2.0/all.min.css" rel="stylesheet">
-<link href="../../site_libs/quarto-contrib/fontawesome6-1.2.0/latex-fontsize.css" rel="stylesheet">
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<link href="../../../assets/logos/favicon.png" rel="icon" type="image/png">
+<script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-c4702b6e67f8e19bc06513fd91c1011e.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap-6c8d328bef3a44df5c2a5fd81e00f2c8.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/quarto-contrib/fontawesome6-1.2.0/all.min.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-contrib/fontawesome6-1.2.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -73,73 +71,12 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-pubs .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-publication','listing-title','listing-categories','listing-image','listing-date','listing-author',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-date-modified-sort'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
-      
-      searchColumns: ["listing-project","listing-pagetitle","listing-author-meta","listing-website","listing-format","listing-resources","listing-_quarto-vars","listing-language","listing-title","listing-date","listing-author","listing-categories","listing-url_source","listing-journ","listing-page","listing-year","listing-doi","listing-image","listing-path","listing-outputHref","listing-date-modified","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-pubs'] = new List('listing-pubs', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 <style>html{ scroll-behavior: smooth; }</style>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<meta name="twitter:title" content="Uncertainty &amp; Risk Aware Decision Making | Elnaz Group">
+<meta name="twitter:title" content="Forecasting Bus-Level Load Time Series on Synthetic Grids Using Weather-Informed Deep Learning | Elnaz Group">
 <meta name="twitter:description" content="The Kabir Research Group studies Sustainable Energy Resilience">
-<meta name="twitter:image" content="https://viveks.bee.cornell.edu/research/Uncertainty-&amp;-Risk-Aware-Decision-Making/uncertain.png">
-<meta name="twitter:image-height" content="341">
-<meta name="twitter:image-width" content="512">
-<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:card" content="summary">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -149,7 +86,7 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../../index.html">
+    <a class="navbar-brand" href="../../../index.html">
     <span class="navbar-title">Kabir Group</span>
     </a>
   </div>
@@ -160,27 +97,27 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../people/index.html"> 
+    <a class="nav-link" href="../../../people/index.html"> 
 <span class="menu-text">People</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../research/index.html"> 
+    <a class="nav-link" href="../../../research/index.html"> 
 <span class="menu-text">Research</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../publications/index.html"> 
+    <a class="nav-link" href="../../../publications/index.html"> 
 <span class="menu-text">Publications</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../teaching/index.html"> 
+    <a class="nav-link" href="../../../teaching/index.html"> 
 <span class="menu-text">Teaching</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../join/index.html"> 
+    <a class="nav-link" href="../../../join/index.html"> 
 <span class="menu-text">Join Us</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../contact/index.html"> 
+    <a class="nav-link" href="../../../contact/index.html"> 
 <span class="menu-text">Contact</span></a>
   </li>  
   <li class="nav-item">
@@ -203,7 +140,7 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#selected-publications" id="toc-selected-publications" class="nav-link active" data-scroll-target="#selected-publications">Selected Publications</a></li>
+  <li><a href="#abstract" id="toc-abstract" class="nav-link active" data-scroll-target="#abstract">Abstract</a></li>
   </ul>
 </nav>
     </div>
@@ -212,13 +149,33 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Uncertainty &amp; Risk Aware Decision Making</h1>
-</div>
+<h1 class="title">Forecasting Bus-Level Load Time Series on Synthetic Grids Using Weather-Informed Deep Learning</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">Load forecasting</div>
+    <div class="quarto-category">Load Modelling</div>
+    <div class="quarto-category">Load Time Series</div>
+    <div class="quarto-category">Non-linear bio-inspired deep learning</div>
+    <div class="quarto-category">Power Systems</div>
+    <div class="quarto-category">Synthetic grids</div>
+    <div class="quarto-category">Weather impact</div>
+  </div>
+  </div>
 
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Authors</div>
+    <div class="quarto-title-meta-contents">
+             <p>Elnaz Kabir </p>
+             <p>Farnaz Safdarian </p>
+             <p>Seyedmahdi Kazemirazi </p>
+             <p>Thomas Chen </p>
+             <p>Diana Wallison </p>
+             <p>Thomas J. Overbye </p>
+          </div>
+  </div>
     
   
     
@@ -229,172 +186,9 @@ window.Quarto = {
 </header>
 
 
-<div class="quarto-figure quarto-figure-left">
-<figure class="figure">
-<p><img src="uncertain.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:80.0%"></p>
-</figure>
-</div>
-<p>Uncertainty and risks are inherent in real-world decision-making, fundamentally impacting how systems are designed and operated. In the context of power systems, unpredictable disruptions—such as weather events, fluctuating demand, and technology costs—require decision frameworks that explicitly account for these uncertainties to ensure robust and resilient outcomes. Our research addresses these challenges by integrating advanced optimization frameworks, such as stochastic programming and adaptive robust optimization, to handle both probabilistic and non-probabilistic uncertainties. These works enable decision-makers to anticipate and respond to unpredictable disruptions, strengthen system resilience, and ensure efficient planning and operation even when faced with complex and evolving uncertainties.</p>
-<section id="selected-publications" class="level2">
-<h2 class="anchored" data-anchor-id="selected-publications">Selected Publications</h2>
-<div id="listing-pubs" class="quarto-listing quarto-listing-container-custom">
-<div class="listing-actions-group">
-    <div class="input-group input-group-sm quarto-listing-filter">
-      <span class="input-group-text"><i class="bi bi-search"></i></span>
-      <input type="text" class="search form-control" placeholder="Filter">
-    </div>
-</div>
-<div class="list quarto-listing-default">
-    
-    
-    <div class="quarto-post image-right" data-index="0" data-categories="YmF0dGVyeSUyMHN0b3JhZ2UlMjBzeXN0ZW1zJTJDcmVuZXdhYmxlJTIwZW5lcmd5JTIwaW50ZWdyYXRpb24lMkNzdG9jaGFzdGljJTIwb3B0aW1pemF0aW9uJTJDZ3JpZCUyMHJlc2lsaWVuY2UlMkNlbmVyZ3klMjB0cmFuc2l0aW9u" data-listing-date-sort="1756789200000" data-listing-file-modified-sort="1770917989459" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="207">
-        <div class="thumbnail">
-            <!-- <a href="/publications/articles/2025_Techno_Economic_Planning_of_Spatially_Resolved_Battery_Storage_Systems/index.qmd"> -->
-
-                <p>
-                    
-                    <img alt="Techno-Economic Planning of Spatially-Resolved Battery Storage Systems in Renewable-Dominant Grids Under Weather Variability" src="../../publications/articles/2025_Techno_Economic_Planning_of_Spatially_Resolved_Battery_Storage_Systems/weather.jpg" class="thumbnail-image">
-                    
-
-                </p>
-      
-
-            <!-- </a> -->
-        </div>
-        <div class="body">
-            <!-- <a href="/publications/articles/2025_Techno_Economic_Planning_of_Spatially_Resolved_Battery_Storage_Systems/index.qmd"> -->
-            <div class="no-anchor listing-pub-title listing-title"><a href="../../publications/articles/2025_Techno_Economic_Planning_of_Spatially_Resolved_Battery_Storage_Systems/index.html">Techno-Economic Planning of Spatially-Resolved Battery Storage Systems in Renewable-Dominant Grids Under Weather Variability</a></div>
-                
-                <div class="listing-pub-author listing-author">
-                    Seyed Ehsan Ahmadi, Elnaz Kabir, Mohammad Fattahi, Mousa Marzband, Dongjun Li<br> 
-                </div>
-                
-                <div class="metadata-value listing-pub-journal listing-publication">
-                    
-                        <i>Applied Energy</i> (2025)<br>
-                        
-                        
-                        
-                        
-                        
-                        
-                </div>
-                    
-                    
-                    
-            <!-- </a> -->
- <!--               <div class="listing-categories">
-                
-                <div class="listing-category" onclick="window.quartoListingCategory('battery storage systems'); return false;">battery storage systems</div>
-                
-                <div class="listing-category" onclick="window.quartoListingCategory('renewable energy integration'); return false;">renewable energy integration</div>
-                
-                <div class="listing-category" onclick="window.quartoListingCategory('stochastic optimization'); return false;">stochastic optimization</div>
-                
-                <div class="listing-category" onclick="window.quartoListingCategory('grid resilience'); return false;">grid resilience</div>
-                
-                <div class="listing-category" onclick="window.quartoListingCategory('energy transition'); return false;">energy transition</div>
-                
-                </div>
-                -->
-        </div>
-        <div class="metadata">
-
-            <!-- </a> -->
-            
-            <div class="listing-pub-url">
-
-                    <a href="https://doi.org/10.1016/j.apenergy.2025.121436">
-                    <p style="color:#b31b1b;"><i class="fa-solid fa-file"></i>&nbsp;published <i class="bi bi-box-arrow-up-right"></i></p>
-                    </a>
-                </div>
-                    
-
-            
-
-            
-
-        </div>
-    </div>
-    
-    
-    
-    <div class="quarto-post image-right" data-index="1" data-categories="cmVuZXdhYmxlJTIwZW5lcmd5JTIwc3lzdGVtcyUyQ2NsaW1hdGUlMjB2YXJpYWJpbGl0eSUyQ2VsZWN0cmljaXR5JTIwbWFya2V0cyUyQ2dyaWQlMjByZXNpbGllbmNlJTJDZW5lcmd5JTIwYW5hbHl0aWNz" data-listing-date-sort="1704088800000" data-listing-file-modified-sort="1770917098554" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="188">
-        <div class="thumbnail">
-            <!-- <a href="/publications/articles/2024_Quantifying_the_impact_of_multi_scale_climate_variability/index.qmd"> -->
-
-                <p>
-                    
-                    <img alt="Quantifying the impact of multi-scale climate variability on electricity prices in a renewable-dominated power grid" src="../../publications/articles/2024_Quantifying_the_impact_of_multi_scale_climate_variability/power_grid.webp" class="thumbnail-image">
-                    
-
-                </p>
-      
-
-            <!-- </a> -->
-        </div>
-        <div class="body">
-            <!-- <a href="/publications/articles/2024_Quantifying_the_impact_of_multi_scale_climate_variability/index.qmd"> -->
-            <div class="no-anchor listing-pub-title listing-title"><a href="../../publications/articles/2024_Quantifying_the_impact_of_multi_scale_climate_variability/index.html">Quantifying the impact of multi-scale climate variability on electricity prices in a renewable-dominated power grid</a></div>
-                
-                <div class="listing-pub-author listing-author">
-                    Elnaz Kabir, Vivek Srikrishnan, M. Vivienne Liu, Scott Steinschneider, C. Lindsay Anderson<br> 
-                </div>
-                
-                <div class="metadata-value listing-pub-journal listing-publication">
-                    
-                        <i>Renewable Energy</i>, 120013 (2024)<br>
-                        
-                        
-                        
-                        
-                        
-                        
-                </div>
-                    
-                    
-                    
-            <!-- </a> -->
- <!--               <div class="listing-categories">
-                
-                <div class="listing-category" onclick="window.quartoListingCategory('renewable energy systems'); return false;">renewable energy systems</div>
-                
-                <div class="listing-category" onclick="window.quartoListingCategory('climate variability'); return false;">climate variability</div>
-                
-                <div class="listing-category" onclick="window.quartoListingCategory('electricity markets'); return false;">electricity markets</div>
-                
-                <div class="listing-category" onclick="window.quartoListingCategory('grid resilience'); return false;">grid resilience</div>
-                
-                <div class="listing-category" onclick="window.quartoListingCategory('energy analytics'); return false;">energy analytics</div>
-                
-                </div>
-                -->
-        </div>
-        <div class="metadata">
-
-            <!-- </a> -->
-            
-            <div class="listing-pub-url">
-
-                    <a href="https://doi.org/10.1016/j.renene.2024.120013">
-                    <p style="color:#b31b1b;"><i class="fa-solid fa-file"></i>&nbsp;published <i class="bi bi-box-arrow-up-right"></i></p>
-                    </a>
-                </div>
-                    
-
-            
-
-            
-
-        </div>
-    </div>
-    
-    
-    </div>
-
-<div class="listing-no-matching d-none">No matching items</div>
-</div>
-
+<section id="abstract" class="level2">
+<h2 class="anchored" data-anchor-id="abstract">Abstract</h2>
+<p>This paper proposes a methodology to forecast synthetic hourly time series of bus-level load based on publicly available data of load, customer behavior and weather measurements using a novel non-linear, hybrid, bio-inspired deep learning_based Recurrent Neural Network (RNN). The proposed model reflect human temporal behavior, selective forgetting, and circadian behavioral patterns through gated recurrent dynamics and cyclical time encoding. The main advantage of the proposed strategy is that the load can be predicted in bus level for any future time with available weather forecast data. The created load can be used on synthetic grids for power system studies such as planning and market analysis without any concerns of disclosing protected data. A Synthetic grid over Texas footprint in the United States with 6717 buses is used as the case study, and the proposed load forecast strategy is compared to the actual load in the same geographical footprint with the same sub-areas, and shows around 95% accuracy for the aggregated load</p>
 
 
 </section>
@@ -812,7 +606,7 @@ window.Quarto = {
 <p><span class="faux-block"><i class="fa-brands fa-creative-commons" aria-label="creative-commons"></i> 2021-2025 Elnaz Kabir</span> <span class="faux-block">All content licensed under<br><a href="https://creativecommons.org/licenses/by/4.0/"><i class="fa-brands fa-creative-commons" aria-label="creative-commons"></i> <i class="fa-brands fa-creative-commons-by" aria-label="creative-commons-by"></i> Creative Commons CC BY 4.0</a></span></p>
 </div>   
     <div class="nav-footer-center">
-<p>Made with <a href="https://quarto.org/"><img src="https://quarto.org/quarto.png" class="img-fluid" alt="Quarto" width="65"></a><br> See the <a href="../../about.html">About Page</a> for credit information.</p>
+<p>Made with <a href="https://quarto.org/"><img src="https://quarto.org/quarto.png" class="img-fluid" alt="Quarto" width="65"></a><br> See the <a href="../../../about.html">About Page</a> for credit information.</p>
 </div>
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
@@ -830,5 +624,5 @@ window.Quarto = {
 
 
 
-<script src="../../site_libs/quarto-html/zenscroll-min.js"></script>
+<script src="../../../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>
