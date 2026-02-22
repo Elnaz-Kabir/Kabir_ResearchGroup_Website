@@ -3,7 +3,7 @@ pagetitle: "Elnaz Kabir Research Group"
 page-layout: full
 title: "Laboratory for Advancing Sustainable Energy Resilience (LASER)"
 subtitle: "Welcome to the Elnaz Kabir Research Group"
-title-block-banner: "_site/assets/logos/electricity.jpg"
+title-block-banner: "electricity.jpg"
 title-block-banner-color: "#f7f7f7"
 ---
 
@@ -16,7 +16,7 @@ Our research group develops and applies advanced analytics to model, optimize, a
 :::
 ::: {.column width=35%}
 
-![](assets/figures/Lab_img.jpeg){style="display:block; margin-left:auto; margin-right:auto; "width=100% fig-alt="Texas A&M University"}
+![](Lab_img.jpeg){style="display:block; margin-left:auto; margin-right:auto; "width=100% fig-alt="Texas A&M University"}
 
 :::
 ::::
