@@ -8,7 +8,7 @@ listing:
       external: true
     template: ../_ejs/people-box.ejs
     type: grid
-    fields: [title, subtitle, image, education]
+    fields: [title, subtitle, image]
 
   - id: postdoc
     include:

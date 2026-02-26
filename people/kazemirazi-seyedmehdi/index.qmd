@@ -1,11 +1,11 @@
 ---
-title: &TITLE Seyedmehdi kazemiraz
-last: kazemiraz
+title: &TITLE Seyedmehdi kazemirazi
+last: kazemirazi
 first: Seyedmehdi
 people_group: "gradstudent"
 email: "mahdi.kazemirazi@tamu.edu"
 education:
-  - PH.D. Student, Electrical and Computer Engineering, Texas A&M University <br> M.S. Electrical Engineering, 2025
+  - M.S., Electrical and Computer Engineering, University of Utah, 2025 <br> M.S. Electrical Engineering, Amirkabir University of Technology, Tehran, 2020 <br> B.S. Electrical Engineering, Ferdowsi University, Mashhad, 2017
 subtitle: "PH.D. Student, Electrical and Computer Engineering, Texas A&M University"
 affiliation: Cornell University
 image: Seyed.jpeg

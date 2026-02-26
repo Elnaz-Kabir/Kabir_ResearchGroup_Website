@@ -3,14 +3,14 @@ title: &TITLE Elnaz Kabir
 last: Kabir
 first: Elnaz
 people_group: "pi"
-email: "vs498@cornell.edu"
+email: "ekabir@tamu.edu"
 education:
   - Ph.D., Industrial & Operations Engineering, University of Michigan, 2021 <br> M.S., Statistics, University of Michigan, 2017 <br> B.S., Industrial Engineering, K.N.T. University of Technology, Tehran, Iran, 2011
-subtitle: "Assistant Professor <br> 
-Engineering Technology & Industrial Distribution Department, 
-Electrical and Computer Engineering Department (Affiliated)
+subtitle: "Assistant Professor, <br> 
+Engineering Technology & Industrial Distribution, <br> 
+Electrical and Computer Engineering (Affiliated)
 "
-affiliation: "Cornell University"
+affiliation: "Texas A&M University"
 image: ElnazKabir.jpg
 page-layout: full
 about: 

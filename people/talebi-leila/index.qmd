@@ -5,7 +5,7 @@ first: laila
 people_group: "gradstudent"
 email: "leila.talebi@tamu.edu"
 education:
-  - PH.D. Student, Electrical and Computer Engineering, Texas A&M University <br> M.S. Industrial Engineering, South Dokuta School of Mines, 2024 <br> B.S. Amirkabir University of Technology (Tehran Polytechnic), 2022
+  - M.S. Industrial Engineering, South Dokuta School of Mines (2024) <br> B.S. Industrial Engineering, Amirkabir University of Technology (2022)
 subtitle: "PH.D. Student, Interdisciplinary Engineering, Texas A&M University"
 affiliation: Cornell University
 image: LeilaTalebi.jpg

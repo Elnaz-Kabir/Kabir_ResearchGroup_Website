@@ -5,7 +5,7 @@ first: Farah
 people_group: "gradstudent"
 email: "farah_tamu_92@tamu.edu"
 education:
-  - PH.D. Student, Electrical and Computer Engineering, Texas A&M University <br> M.S. Electrical Engineering, Texas State University, 2019 <br> B.S. Yarmouk University, Jordan, 2016
+  - M.S. Electrical Engineering, Texas State University, 2019 <br> B.S. Yarmouk University, Jordan, 2016
 
 subtitle: "PH.D. Student, Electrical and Computer Engineering, Texas A&M University"
 affiliation: Cornell University
