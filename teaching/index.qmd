@@ -18,7 +18,7 @@ I strive to make course content clear, structured, and accessible, and I welcome
 
 ::: {.g-col-3}
 
-<br><img src="../assets/logos/analytics.png" width="100%">
+<br><img src="AppliedPredictiveModeling.png" width="100%">
 
 **Semesters Taught**:
 
@@ -50,7 +50,7 @@ This course is required for Industrial Distribution majors. While we will mostly
 
 ::: {.g-col-3}
 
-<br><img src="../assets/logos/decision.webp" width="100%">
+<br><img src="DecisionAnalysis.png" width="100%">
 
 **Semesters Taught**:
 
