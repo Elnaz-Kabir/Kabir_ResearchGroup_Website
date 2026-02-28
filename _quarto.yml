@@ -49,6 +49,7 @@ website:
 
 format:
   html:
+    include-in-header: analytics.html
     theme: 
       [default, styles/custom.scss]
     toc: true
