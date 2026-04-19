@@ -1,0 +1,19 @@
+---
+title: "Paper on adaptive power outage prediction published in Risk Analysis"
+description: "Power outage prediction using data streams with an adaptive ensemble learning approach."
+date: "2023-09-15"
+author: "Kabir Group"
+categories: [publication]
+---
+
+Our paper, **"Power Outage Prediction Using Data Streams: An Adaptive Ensemble Learning Approach with a Feature- and Performance-based Weighting Mechanism"** by **E. Kabir**, S. Guikema, and S. Quiring, was published in **Risk Analysis**.
+
+## About the Work
+
+Weather conditions — from windstorms to prolonged heat events — can significantly impact power systems, causing outages and inconvenience for millions of customers. This paper develops an adaptive ensemble learning method that uses streaming data to predict the probability distribution of the number of customers without power.
+
+The method continuously updates its weighting of features and component models as new data arrives, making it well-suited to the non-stationary conditions typical of real-world grid operations.
+
+## Collaboration
+
+This work was done in collaboration with the **American Electric Power (AEP) Company**, using real operational data to validate the approach.

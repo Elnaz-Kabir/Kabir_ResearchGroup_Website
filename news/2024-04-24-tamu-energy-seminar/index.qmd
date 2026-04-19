@@ -1,0 +1,23 @@
+---
+title: "Dr. Kabir gives Texas A&M Energy Institute seminar on zero-carbon grids"
+description: "Seminar talk: Towards Zero-Carbon Power Grids — Navigating Renewables' Complexities and Constraints."
+date: "2024-04-24"
+author: "Kabir Group"
+categories: [talk, seminar]
+---
+
+Dr. Kabir delivered a seminar at the **Texas A&M Energy Institute** titled **"Towards Zero-Carbon Power Grids: Navigating Renewables' Complexities and Constraints."**
+
+## Talk Summary
+
+The global push to combat climate change has focused attention on decarbonizing power systems. However, the variability and intermittency of renewable energy sources create real challenges for power system operations — including energy curtailment and price volatility.
+
+The seminar analyzed these challenges while characterizing the covariability between renewable energy supply and electricity demand, and the interplay between these resources and the operational constraints of the power grid.
+
+## Key Messages
+
+- Integrating renewable energy can produce large and heterogeneous changes in energy prices.
+- Expanding wind and solar without regard for grid specifications can lead to inefficient energy use and substantial curtailment.
+- Spatiotemporal dynamics and operational constraints need to be central in decisions about new renewable investment.
+
+Thanks to the Energy Institute for hosting!

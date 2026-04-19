@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>Kabir Group</title>
+<link>https://viveks.bee.cornell.edu/news/</link>
+<atom:link href="https://viveks.bee.cornell.edu/news/index.xml" rel="self" type="application/rss+xml"/>
+<description>The Kabir Research Group studies Sustainable Energy Resilience</description>
+<generator>quarto-1.8.27</generator>
+<lastBuildDate>Wed, 15 Oct 2025 05:00:00 GMT</lastBuildDate>
+<item>
+  <title>New paper in Applied Energy: Techno-economic planning of battery storage systems</title>
+  <dc:creator>Kabir Group</dc:creator>
+  <link>https://viveks.bee.cornell.edu/news/2025-10-15-battery-storage-paper/</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>A new paper led by the group has been accepted: <strong>“Techno-Economic Planning of Spatially-Resolved Battery Storage Systems in Renewable-Dominant Grids Under Weather Variability”</strong> by S.E. Ahmadi, <strong>E. Kabir</strong>, M. Marzband, M. Fattahi, and D. Li.</p>
+<section id="overview" class="level2">
+<h2 class="anchored" data-anchor-id="overview">Overview</h2>
+<p>The paper develops a spatially-resolved planning framework for battery energy storage in grids with high renewable penetration. By accounting for weather variability explicitly, the approach identifies where and how much storage to deploy to balance economics, reliability, and emissions goals.</p>
+</section>
+<section id="why-it-matters" class="level2">
+<h2 class="anchored" data-anchor-id="why-it-matters">Why It Matters</h2>
+<p>As renewable integration accelerates, storage siting and sizing decisions have long-term consequences for grid operations. This work gives planners and policymakers a quantitative tool to make those decisions under realistic weather uncertainty.</p>
+<p>Congratulations to the authors!</p>
+
+
+</section>
+
+ ]]></description>
+  <category>publication</category>
+  <guid>https://viveks.bee.cornell.edu/news/2025-10-15-battery-storage-paper/</guid>
+  <pubDate>Wed, 15 Oct 2025 05:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Congratulations Vivienne Liu on a new paper about zero-emission grid vulnerabilities!</title>
+  <dc:creator>Kabir Group</dc:creator>
+  <link>https://viveks.bee.cornell.edu/news/2025-06-20-vivienne-zero-emission-paper/</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>Vivienne Liu’s paper, <strong>“Energy System Vulnerabilities in a Zero-Emission Grid: The Role of Climate Variability and Technology Uncertainty”</strong> (V. Liu, V. Srikrishnan, K. Doering, <strong>E. Kabir</strong>, S. Steinschneider, L. Anderson), has been published.</p>
+<section id="abstract" class="level2">
+<h2 class="anchored" data-anchor-id="abstract">Abstract</h2>
+<p>The study examines how a fully decarbonized power grid responds to the combined pressures of climate variability and uncertain technology performance. Using a stochastic planning framework, the authors identify the specific conditions under which zero-emission systems remain resilient — and where they become fragile.</p>
+</section>
+<section id="key-contributions" class="level2">
+<h2 class="anchored" data-anchor-id="key-contributions">Key Contributions</h2>
+<ul>
+<li>A joint treatment of climate variability and technology uncertainty in long-term grid planning</li>
+<li>Evidence that some low-probability weather conditions disproportionately drive system stress</li>
+<li>Policy-relevant guidance for investments in generation, storage, and transmission</li>
+</ul>
+<p>Great work, Vivienne!</p>
+
+
+</section>
+
+ ]]></description>
+  <category>publication</category>
+  <category>student</category>
+  <guid>https://viveks.bee.cornell.edu/news/2025-06-20-vivienne-zero-emission-paper/</guid>
+  <pubDate>Fri, 20 Jun 2025 05:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>New publication in Renewable Energy on multi-scale climate variability and electricity prices</title>
+  <dc:creator>Kabir Group</dc:creator>
+  <link>https://viveks.bee.cornell.edu/news/2024-11-08-electricity-prices-paper/</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>Our paper, <strong>“Quantifying the Impact of Multi-scale Climate Variability on Electricity Prices in a Renewable-dominated Power Grid”</strong> by <strong>E. Kabir</strong>, V. Srikrishnan, V. Liu, S. Steinschneider, and L. Anderson, has been published in <strong>Renewable Energy</strong>.</p>
+<section id="overview" class="level2">
+<h2 class="anchored" data-anchor-id="overview">Overview</h2>
+<p>The paper quantifies how climate variability — across daily, seasonal, and multi-year time scales — translates into electricity price behavior when a power grid is dominated by renewables. The analysis separates out the relative contributions of short-term weather fluctuations and longer climate cycles.</p>
+</section>
+<section id="takeaway" class="level2">
+<h2 class="anchored" data-anchor-id="takeaway">Takeaway</h2>
+<p>Price volatility under high-renewable conditions is not driven by a single time scale. Grid planners and market designers need to account for the full spectrum of climate variability when evaluating future market outcomes.</p>
+
+
+</section>
+
+ ]]></description>
+  <category>publication</category>
+  <guid>https://viveks.bee.cornell.edu/news/2024-11-08-electricity-prices-paper/</guid>
+  <pubDate>Fri, 08 Nov 2024 06:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Kabir Group presents at the INFORMS Annual Meeting</title>
+  <dc:creator>Kabir Group</dc:creator>
+  <link>https://viveks.bee.cornell.edu/news/2024-10-01-informs-annual-meeting/</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>Members of the Kabir Group presented recent work at the <strong>INFORMS Annual Meeting</strong> in Phoenix, Arizona.</p>
+<section id="featured-talk" class="level2">
+<h2 class="anchored" data-anchor-id="featured-talk">Featured Talk</h2>
+<p><strong>“Multi-scale and Multi-resource Analysis of Increased Adoption of Renewable Energy Sources”</strong> — <strong>E. Kabir</strong>, V. Srikrishnan, V. Liu, S. Steinschneider, L. Anderson</p>
+<p>The talk covered how different renewable mixes interact with power grid operational constraints, with implications for curtailment, price volatility, and investment planning.</p>
+</section>
+<section id="why-informs" class="level2">
+<h2 class="anchored" data-anchor-id="why-informs">Why INFORMS</h2>
+<p>INFORMS brings together operations research and analytics communities from across academia and industry. It’s an important venue for sharing our group’s methodological contributions and connecting with collaborators working on related problems in energy, infrastructure, and supply chains.</p>
+
+
+</section>
+
+ ]]></description>
+  <category>conference</category>
+  <guid>https://viveks.bee.cornell.edu/news/2024-10-01-informs-annual-meeting/</guid>
+  <pubDate>Tue, 01 Oct 2024 05:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Dr. Kabir gives Texas A&amp;M Energy Institute seminar on zero-carbon grids</title>
+  <dc:creator>Kabir Group</dc:creator>
+  <link>https://viveks.bee.cornell.edu/news/2024-04-24-tamu-energy-seminar/</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>Dr.&nbsp;Kabir delivered a seminar at the <strong>Texas A&amp;M Energy Institute</strong> titled <strong>“Towards Zero-Carbon Power Grids: Navigating Renewables’ Complexities and Constraints.”</strong></p>
+<section id="talk-summary" class="level2">
+<h2 class="anchored" data-anchor-id="talk-summary">Talk Summary</h2>
+<p>The global push to combat climate change has focused attention on decarbonizing power systems. However, the variability and intermittency of renewable energy sources create real challenges for power system operations — including energy curtailment and price volatility.</p>
+<p>The seminar analyzed these challenges while characterizing the covariability between renewable energy supply and electricity demand, and the interplay between these resources and the operational constraints of the power grid.</p>
+</section>
+<section id="key-messages" class="level2">
+<h2 class="anchored" data-anchor-id="key-messages">Key Messages</h2>
+<ul>
+<li>Integrating renewable energy can produce large and heterogeneous changes in energy prices.</li>
+<li>Expanding wind and solar without regard for grid specifications can lead to inefficient energy use and substantial curtailment.</li>
+<li>Spatiotemporal dynamics and operational constraints need to be central in decisions about new renewable investment.</li>
+</ul>
+<p>Thanks to the Energy Institute for hosting!</p>
+
+
+</section>
+
+ ]]></description>
+  <category>talk</category>
+  <category>seminar</category>
+  <guid>https://viveks.bee.cornell.edu/news/2024-04-24-tamu-energy-seminar/</guid>
+  <pubDate>Wed, 24 Apr 2024 05:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Paper on adaptive power outage prediction published in Risk Analysis</title>
+  <dc:creator>Kabir Group</dc:creator>
+  <link>https://viveks.bee.cornell.edu/news/2023-09-15-risk-analysis-paper/</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>Our paper, <strong>“Power Outage Prediction Using Data Streams: An Adaptive Ensemble Learning Approach with a Feature- and Performance-based Weighting Mechanism”</strong> by <strong>E. Kabir</strong>, S. Guikema, and S. Quiring, was published in <strong>Risk Analysis</strong>.</p>
+<section id="about-the-work" class="level2">
+<h2 class="anchored" data-anchor-id="about-the-work">About the Work</h2>
+<p>Weather conditions — from windstorms to prolonged heat events — can significantly impact power systems, causing outages and inconvenience for millions of customers. This paper develops an adaptive ensemble learning method that uses streaming data to predict the probability distribution of the number of customers without power.</p>
+<p>The method continuously updates its weighting of features and component models as new data arrives, making it well-suited to the non-stationary conditions typical of real-world grid operations.</p>
+</section>
+<section id="collaboration" class="level2">
+<h2 class="anchored" data-anchor-id="collaboration">Collaboration</h2>
+<p>This work was done in collaboration with the <strong>American Electric Power (AEP) Company</strong>, using real operational data to validate the approach.</p>
+
+
+</section>
+
+ ]]></description>
+  <category>publication</category>
+  <guid>https://viveks.bee.cornell.edu/news/2023-09-15-risk-analysis-paper/</guid>
+  <pubDate>Fri, 15 Sep 2023 05:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Dr. Kabir joins Texas A&amp;M University as Assistant Professor</title>
+  <dc:creator>Kabir Group</dc:creator>
+  <link>https://viveks.bee.cornell.edu/news/2023-08-01-joining-tamu/</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>Dr.&nbsp;Kabir has officially joined <strong>Texas A&amp;M University</strong> as an Assistant Professor in the Department of Engineering Technology &amp; Industrial Distribution (ETID). This marks the formal launch of the <strong>Laboratory for Advancing Sustainable Energy Resilience (LASER)</strong> at TAMU.</p>
+<section id="about-the-new-home" class="level2">
+<h2 class="anchored" data-anchor-id="about-the-new-home">About the New Home</h2>
+<p>ETID at Texas A&amp;M brings together expertise in engineering, industrial distribution, and applied research — a natural fit for the group’s mission to develop advanced analytics for future energy systems. The group will also engage with the broader Texas A&amp;M Energy Institute community.</p>
+</section>
+<section id="looking-ahead" class="level2">
+<h2 class="anchored" data-anchor-id="looking-ahead">Looking Ahead</h2>
+<p>The group is now actively recruiting PhD and MS students interested in energy system optimization, weather-informed analytics, power outage modeling, and related topics. See the <a href="../../join/index.html">Join Us</a> page for details.</p>
+<p>Gig ’em!</p>
+
+
+</section>
+
+ ]]></description>
+  <category>milestone</category>
+  <guid>https://viveks.bee.cornell.edu/news/2023-08-01-joining-tamu/</guid>
+  <pubDate>Tue, 01 Aug 2023 05:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>New preprint: Multi-scale impacts of large-scale renewable adoption</title>
+  <dc:creator>Kabir Group</dc:creator>
+  <link>https://viveks.bee.cornell.edu/news/2023-07-20-multi-scale-renewables-preprint/</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>A new preprint is now available on arXiv: <strong>“Quantifying the Multi-scale and Multi-resource Impacts of Large-scale Adoption of Renewable Energy Sources”</strong> by <strong>E. Kabir</strong>, V. Srikrishnan, V. Liu, S. Steinschneider, and L. Anderson (<a href="https://arxiv.org/pdf/2307.11076.pdf">arXiv:2307.11076</a>).</p>
+<section id="whats-in-it" class="level2">
+<h2 class="anchored" data-anchor-id="whats-in-it">What’s in It</h2>
+<p>The paper quantifies how large-scale adoption of wind and solar reshapes grid operations across multiple time scales and resource types. It characterizes how supply-demand covariability and operational constraints interact to determine system outcomes like curtailment and price dispersion.</p>
+</section>
+<section id="why-it-matters" class="level2">
+<h2 class="anchored" data-anchor-id="why-it-matters">Why It Matters</h2>
+<p>Policy discussions about renewable targets often rely on annual averages. This work shows that annual-average framing misses important operational dynamics that only emerge when you look at finer time scales and across multiple resource dimensions simultaneously.</p>
+<p>Feedback from the community is welcome!</p>
+
+
+</section>
+
+ ]]></description>
+  <category>preprint</category>
+  <guid>https://viveks.bee.cornell.edu/news/2023-07-20-multi-scale-renewables-preprint/</guid>
+  <pubDate>Thu, 20 Jul 2023 05:00:00 GMT</pubDate>
+</item>
+</channel>
+</rss>

@@ -1,0 +1,19 @@
+---
+title: "New paper in Applied Energy: Techno-economic planning of battery storage systems"
+description: "Techno-Economic Planning of Spatially-Resolved Battery Storage Systems in Renewable-Dominant Grids Under Weather Variability."
+date: "2025-10-15"
+author: "Kabir Group"
+categories: [publication]
+---
+
+A new paper led by the group has been accepted: **"Techno-Economic Planning of Spatially-Resolved Battery Storage Systems in Renewable-Dominant Grids Under Weather Variability"** by S.E. Ahmadi, **E. Kabir**, M. Marzband, M. Fattahi, and D. Li.
+
+## Overview
+
+The paper develops a spatially-resolved planning framework for battery energy storage in grids with high renewable penetration. By accounting for weather variability explicitly, the approach identifies where and how much storage to deploy to balance economics, reliability, and emissions goals.
+
+## Why It Matters
+
+As renewable integration accelerates, storage siting and sizing decisions have long-term consequences for grid operations. This work gives planners and policymakers a quantitative tool to make those decisions under realistic weather uncertainty.
+
+Congratulations to the authors!

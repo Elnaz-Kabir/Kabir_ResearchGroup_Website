@@ -1,0 +1,15 @@
+---
+listing:
+  contents: "*/index.qmd"
+  type: default
+  sort: "date desc"
+  fields: [date, title, description]
+  date-format: "DD MMM YYYY"
+  categories: false
+  feed: true
+  sort-ui: false
+  filter-ui: false
+page-layout: article
+---
+
+All news and updates from the Kabir Research Group.

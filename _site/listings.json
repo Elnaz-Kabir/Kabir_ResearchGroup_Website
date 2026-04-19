@@ -1,80 +1,41 @@
 [
   {
-    "listing": "/research/flood-risk/index.html",
+    "listing": "/research/Uncertainty-&-Risk-Aware-Decision-Making/index.html",
     "items": [
-      "/publications/articles/2025_Levee_Effect/index.html",
-      "/publications/articles/2025_UNSAFE/index.html",
-      "/publications/articles/2025_Warming_Levels/index.html",
-      "/publications/unpublished/2025_NSI_bias/index.html",
-      "/publications/articles/2024_Riverine_Uncertainty/index.html",
-      "/publications/articles/2023_ABM_Structural_Uncertainty/index.html",
-      "/publications/articles/2020_House_Elevation/index.html",
-      "/publications/articles/2020_Sea_Level_Uncertainty/index.html",
-      "/publications/articles/2019_Investing_Science/index.html",
-      "/publications/articles/2019_Norfolk_Deep_Uncertainties/index.html"
+      "/publications/articles/2025_Techno_Economic_Planning_of_Spatially_Resolved_Battery_Storage_Systems/index.html",
+      "/publications/articles/2024_Quantifying_the_impact_of_multi_scale_climate_variability/index.html"
     ]
   },
   {
-    "listing": "/research/climate-risk/index.html",
+    "listing": "/research/Product-Supply-Chain-and-the-Grid/index.html",
     "items": [
-      "/publications/articles/2025_Emissions_Sea_Level_Rise/index.html",
-      "/publications/articles/2025_Hydrothermal_Carbonization_LCA/index.html",
-      "/publications/articles/2025_Policy_Window/index.html",
-      "/publications/articles/2025_Warming_Levels/index.html",
-      "/publications/articles/2025_Zero_Carbon_Grid/index.html",
-      "/publications/unpublished/2025_Hydro_Futures/index.html",
-      "/publications/unpublished/2025_NSI_bias/index.html",
-      "/publications/unpublished/2025_Pressure_Points/index.html",
-      "/publications/unpublished/2025_Technology_Indicators/index.html",
-      "/publications/articles/2024_Electricity_Prices/index.html",
-      "/publications/articles/2024_Integrating_Values/index.html",
-      "/publications/articles/2023_Climate_Forestry/index.html",
-      "/publications/articles/2022_CO2_Projections/index.html",
-      "/publications/articles/2022_MimiBRICK/index.html",
-      "/publications/articles/2023_Mitigation_Air_Quality/index.html",
-      "/publications/articles/2021_Climate_Risk_Management/index.html",
-      "/publications/articles/2021_Social_Cost_Methane/index.html",
-      "/publications/articles/2020_House_Elevation/index.html",
-      "/publications/articles/2020_Sea_Level_Uncertainty/index.html",
-      "/publications/articles/2019_Investing_Science/index.html",
-      "/publications/articles/2018_Surge_Uncertainty/index.html"
+      "/publications/articles/2025_Energy_System_Vulnerabilities_in_a_Zero_Emission_Grid/index.html",
+      "/publications/articles/2024_Quantifying_the_impact_of_multi_scale_climate_variability/index.html"
     ]
   },
   {
-    "listing": "/people/srikrishnan-vivek/index.html",
+    "listing": "/research/Data-Centers-and-large-loads/index.html",
     "items": [
-      "/publications/articles/2025_Zero_Carbon_Grid/index.html",
-      "/publications/articles/2024_Electricity_Prices/index.html"
+      "/publications/articles/2025_Energy_System_Vulnerabilities_in_a_Zero_Emission_Grid/index.html",
+      "/publications/articles/2024_Quantifying_the_impact_of_multi_scale_climate_variability/index.html"
     ]
   },
   {
-    "listing": "/people/luo-yifan/index.html",
+    "listing": "/people/talebi-leila/index.html",
+    "items": [
+      "/publications/articles/2026_Supply_Chain_Coordination_Under_Increased_Grid_Variability/index.html"
+    ]
+  },
+  {
+    "listing": "/people/rodezno-jonathan/index.html",
     "items": []
   },
   {
-    "listing": "/people/kacharava-nino/index.html",
+    "listing": "/people/kazemirazi-seyedmehdi/index.html",
     "items": []
   },
   {
-    "listing": "/people/darnell-chloe/index.html",
-    "items": []
-  },
-  {
-    "listing": "/people/bhaduri-parin/index.html",
-    "items": [
-      "/publications/articles/2025_Interpretable_ML_Hedonic/index.html",
-      "/publications/articles/2025_Levee_Effect/index.html",
-      "/publications/conference/2024_Neural_ODE/index.html"
-    ]
-  },
-  {
-    "listing": "/people/ackermannlogan-gabriela/index.html",
-    "items": [
-      "/publications/theses/2025_AckermannLogan_Hydrogen/index.html"
-    ]
-  },
-  {
-    "listing": "/people/brito-luan/index.html",
+    "listing": "/people/jaradat-farah/index.html",
     "items": []
   },
   {
@@ -87,63 +48,6 @@
       "/people/kazemirazi-seyedmehdi/index.html",
       "/people/singhal-shubham/index.html",
       "/people/rodezno-jonathan/index.html"
-    ]
-  },
-  {
-    "listing": "/people/lafferty-david/index.html",
-    "items": [
-      "/publications/articles/2022_Uncertainty_MultiSectorDynamics/index.html"
-    ]
-  },
-  {
-    "listing": "/people/schnabel-cella/index.html",
-    "items": []
-  },
-  {
-    "listing": "/people/tang-katerina/index.html",
-    "items": []
-  },
-  {
-    "listing": "/publications/index.html",
-    "items": [
-      "/publications/articles/2026_Supply_Chain_Coordination_Under_Increased_Grid_Variability/index.html",
-      "/publications/articles/2025_Energy_System_Vulnerabilities_in_a_Zero_Emission_Grid/index.html",
-      "/publications/articles/2025_Techno_Economic_Planning_of_Spatially_Resolved_Battery_Storage_Systems/index.html",
-      "/publications/articles/2024_Power_Outage_Prediction_Using_Data_Streams/index.html",
-      "/publications/articles/2024_Quantifying_the_impact_of_multi_scale_climate_variability/index.html",
-      "/publications/articles/2019-Predicting_thunderstorm_induced_power_outages/index.html",
-      "/publications/articles/2018-Statistical_modeling_of_tree_failures_during_storms/index.html",
-      "/publications/articles/2016_Hybrid_robust_and_stochastic_optimization/index.html",
-      "/publications/conference/2025_Generator_Retirement_Optimization_For_New_York/index.html",
-      "/publications/conference/2013_A_Novel_Scenario_Generation_Technique/index.html",
-      "/publications/unpublished/2026_Forecasting_Bus_Level_Load_Series/index.html",
-      "/publications/theses/2021_Predictive_and_Prescriptive_Analytics/index.html"
-    ]
-  },
-  {
-    "listing": "/research/energy-climate/index.html",
-    "items": [
-      "/publications/articles/2025_Zero_Carbon_Grid/index.html",
-      "/publications/unpublished/2025_Hydro_Futures/index.html",
-      "/publications/unpublished/2025_Pressure_Points/index.html",
-      "/publications/articles/2024_Electricity_Prices/index.html",
-      "/publications/articles/2018_Hedging_Strategies/index.html"
-    ]
-  },
-  {
-    "listing": "/research/index.html",
-    "items": [
-      "/research/Data-Centers-and-large-loads/index.html",
-      "/research/Power-System-Predictive-Analytics/index.html",
-      "/research/Product-Supply-Chain-and-the-Grid/index.html",
-      "/research/Renewable-Rich-Grids-and-Energy-Storage/index.html",
-      "/research/Uncertainty-&-Risk-Aware-Decision-Making/index.html"
-    ]
-  },
-  {
-    "listing": "/people/talebi-leila/index.html",
-    "items": [
-      "/publications/articles/2026_Supply_Chain_Coordination_Under_Increased_Grid_Variability/index.html"
     ]
   },
   {
@@ -164,14 +68,6 @@
     ]
   },
   {
-    "listing": "/people/kazemirazi-seyedmehdi/index.html",
-    "items": []
-  },
-  {
-    "listing": "/people/jaradat-farah/index.html",
-    "items": []
-  },
-  {
     "listing": "/people/kharbanda-raunak/index.html",
     "items": []
   },
@@ -180,8 +76,21 @@
     "items": []
   },
   {
-    "listing": "/people/rodezno-jonathan/index.html",
-    "items": []
+    "listing": "/publications/index.html",
+    "items": [
+      "/publications/articles/2026_Supply_Chain_Coordination_Under_Increased_Grid_Variability/index.html",
+      "/publications/articles/2025_Energy_System_Vulnerabilities_in_a_Zero_Emission_Grid/index.html",
+      "/publications/articles/2025_Techno_Economic_Planning_of_Spatially_Resolved_Battery_Storage_Systems/index.html",
+      "/publications/articles/2024_Power_Outage_Prediction_Using_Data_Streams/index.html",
+      "/publications/articles/2024_Quantifying_the_impact_of_multi_scale_climate_variability/index.html",
+      "/publications/articles/2019-Predicting_thunderstorm_induced_power_outages/index.html",
+      "/publications/articles/2018-Statistical_modeling_of_tree_failures_during_storms/index.html",
+      "/publications/articles/2016_Hybrid_robust_and_stochastic_optimization/index.html",
+      "/publications/conference/2025_Generator_Retirement_Optimization_For_New_York/index.html",
+      "/publications/conference/2013_A_Novel_Scenario_Generation_Technique/index.html",
+      "/publications/unpublished/2026_Forecasting_Bus_Level_Load_Series/index.html",
+      "/publications/theses/2021_Predictive_and_Prescriptive_Analytics/index.html"
+    ]
   },
   {
     "listing": "/research/Power-System-Predictive-Analytics/index.html",
@@ -191,28 +100,44 @@
     ]
   },
   {
-    "listing": "/research/Uncertainty-&-Risk-Aware-Decision-Making/index.html",
-    "items": [
-      "/publications/articles/2025_Techno_Economic_Planning_of_Spatially_Resolved_Battery_Storage_Systems/index.html",
-      "/publications/articles/2024_Quantifying_the_impact_of_multi_scale_climate_variability/index.html"
-    ]
-  },
-  {
     "listing": "/research/Renewable-Rich-Grids-and-Energy-Storage/index.html",
     "items": []
   },
   {
-    "listing": "/research/Product-Supply-Chain-and-the-Grid/index.html",
+    "listing": "/research/index.html",
     "items": [
-      "/publications/articles/2025_Energy_System_Vulnerabilities_in_a_Zero_Emission_Grid/index.html",
-      "/publications/articles/2024_Quantifying_the_impact_of_multi_scale_climate_variability/index.html"
+      "/research/Data-Centers-and-large-loads/index.html",
+      "/research/Power-System-Predictive-Analytics/index.html",
+      "/research/Product-Supply-Chain-and-the-Grid/index.html",
+      "/research/Renewable-Rich-Grids-and-Energy-Storage/index.html",
+      "/research/Uncertainty-&-Risk-Aware-Decision-Making/index.html"
     ]
   },
   {
-    "listing": "/research/Data-Centers-and-large-loads/index.html",
+    "listing": "/index.html",
     "items": [
-      "/publications/articles/2025_Energy_System_Vulnerabilities_in_a_Zero_Emission_Grid/index.html",
-      "/publications/articles/2024_Quantifying_the_impact_of_multi_scale_climate_variability/index.html"
+      "/news/index.html",
+      "/news/2025-10-15-battery-storage-paper/index.html",
+      "/news/2025-06-20-vivienne-zero-emission-paper/index.html",
+      "/news/2024-11-08-electricity-prices-paper/index.html",
+      "/news/2024-10-01-informs-annual-meeting/index.html",
+      "/news/2024-04-24-tamu-energy-seminar/index.html",
+      "/news/2023-09-15-risk-analysis-paper/index.html",
+      "/news/2023-08-01-joining-tamu/index.html",
+      "/news/2023-07-20-multi-scale-renewables-preprint/index.html"
+    ]
+  },
+  {
+    "listing": "/news/index.html",
+    "items": [
+      "/news/2025-10-15-battery-storage-paper/index.html",
+      "/news/2025-06-20-vivienne-zero-emission-paper/index.html",
+      "/news/2024-11-08-electricity-prices-paper/index.html",
+      "/news/2024-10-01-informs-annual-meeting/index.html",
+      "/news/2024-04-24-tamu-energy-seminar/index.html",
+      "/news/2023-09-15-risk-analysis-paper/index.html",
+      "/news/2023-08-01-joining-tamu/index.html",
+      "/news/2023-07-20-multi-scale-renewables-preprint/index.html"
     ]
   }
 ]

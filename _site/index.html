@@ -31,6 +31,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
 <link href="./assets/logos/favicon.png" rel="icon" type="image/png">
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
@@ -41,7 +43,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-c4702b6e67f8e19bc06513fd91c1011e.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-6c8d328bef3a44df5c2a5fd81e00f2c8.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-79723272bcad303a28f624ab05359063.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <link href="site_libs/quarto-contrib/fontawesome6-1.2.0/all.min.css" rel="stylesheet">
 <link href="site_libs/quarto-contrib/fontawesome6-1.2.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
@@ -71,6 +73,35 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-news-home .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-date','listing-title',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-news-home'] = new List('listing-news-home', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
 <style>html{ scroll-behavior: smooth; }</style>
 <style>
 
@@ -101,12 +132,39 @@ var sc_security="7620ee1b";
 <script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async=""></script>
 <!-- End of Statcounter Code -->
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <meta name="twitter:title" content="Elnaz Kabir Research Group">
 <meta name="twitter:description" content="Welcome to the Elnaz Kabir Research Group">
-<meta name="twitter:image" content="https://viveks.bee.cornell.edu/Lab_img.jpeg">
-<meta name="twitter:image:alt" content="Texas A&amp;M University">
-<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:card" content="summary">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -193,13 +251,78 @@ var sc_security="7620ee1b";
 
 
 <div class="columns">
-<div class="column" style="width:60%;">
+<div class="column" style="width:55%;">
 <p>The electric power grid is the backbone of modern society, enabling nearly every other critical infrastructure. As electrification expands, AI data centers and reshored manufacturing add major new demand, and extreme weather events become more disruptive, the role of the grid becomes even more vital. At the same time, the energy transition is reshaping how we plan and operate the grid. More renewables, storage, and decentralized resources—along with fast-growing large loads—are making electricity supply and demand more variable and more weather-sensitive, increasing uncertainty and operational challenges.</p>
 <p>Our research group develops and applies advanced analytics to model, optimize, and strengthen future energy systems under uncertainty, with a focus on renewable-rich, electrified, decentralized, and interdependent networks. Our interdisciplinary, mission-driven work includes weather-informed forecasting of renewable generation, electricity demand, and prices; modeling storm and hurricane impacts on outages and restoration; and planning and operating power systems with high levels of renewables and storage using stochastic, robust, and data-driven optimization methods. We also study hydrogen integration as a long-duration energy storage option and industrial supply chains as flexible, grid-interactive resources that coordinate production and logistics decisions with grid conditions.</p>
-</div><div class="column" style="width:35%;">
-<p><img src="Lab_img.jpeg" class="img-fluid" style="display:block; margin-left:auto; margin-right:auto; ;width:100.0%" alt="Texas A&amp;M University"></p>
+<!-- ![](Lab_img.jpeg){style="display:block; margin-top:1.5rem; border-radius:4px;" width="100%" fig-alt="Kabir Research Group Lab"} -->
+</div><div class="column" style="width:3%;">
+
+</div><div class="column news-column" style="width:42%;">
+<div class="news-heading">
+<p>News &amp; Updates</p>
+</div>
+<div id="listing-news-home" class="quarto-listing quarto-listing-container-default">
+<div class="list quarto-listing-default">
+<div class="quarto-post image-right" data-index="0" data-listing-file-modified-sort="1776580501461" data-listing-reading-time-sort="1" data-listing-word-count-sort="9">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./news/index.html" class="no-external"></a>
+</h3>
+</div>
+<div class="metadata">
+<a href="./news/index.html" class="no-external">
+</a>
 </div>
 </div>
+<div class="quarto-post image-right" data-index="1" data-categories="cHVibGljYXRpb24=" data-listing-date-sort="1760504400000" data-listing-file-modified-sort="1776578437486" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="111">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./news/2025-10-15-battery-storage-paper/index.html" class="no-external">New paper in Applied Energy: Techno-economic planning of battery storage systems</a>
+</h3>
+</div>
+<div class="metadata">
+<a href="./news/2025-10-15-battery-storage-paper/index.html" class="no-external">
+<div class="listing-date">
+15 Oct 2025
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="2" data-categories="cHVibGljYXRpb24lMkNzdHVkZW50" data-listing-date-sort="1750395600000" data-listing-file-modified-sort="1776578447015" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="112">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./news/2025-06-20-vivienne-zero-emission-paper/index.html" class="no-external">Congratulations Vivienne Liu on a new paper about zero-emission grid vulnerabilities!</a>
+</h3>
+</div>
+<div class="metadata">
+<a href="./news/2025-06-20-vivienne-zero-emission-paper/index.html" class="no-external">
+<div class="listing-date">
+20 Jun 2025
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="3" data-categories="cHVibGljYXRpb24=" data-listing-date-sort="1731045600000" data-listing-file-modified-sort="1776578455158" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="110">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./news/2024-11-08-electricity-prices-paper/index.html" class="no-external">New publication in Renewable Energy on multi-scale climate variability and electricity prices</a>
+</h3>
+</div>
+<div class="metadata">
+<a href="./news/2024-11-08-electricity-prices-paper/index.html" class="no-external">
+<div class="listing-date">
+08 Nov 2024
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div>
+<p><a href="./news/" class="news-archive-link">View Full Archive →</a></p>
+</div>
+</div>
+
 
 
 

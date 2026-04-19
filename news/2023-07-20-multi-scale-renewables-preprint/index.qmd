@@ -1,0 +1,19 @@
+---
+title: "New preprint: Multi-scale impacts of large-scale renewable adoption"
+description: "Quantifying the multi-scale and multi-resource impacts of large-scale adoption of renewable energy sources."
+date: "2023-07-20"
+author: "Kabir Group"
+categories: [preprint]
+---
+
+A new preprint is now available on arXiv: **"Quantifying the Multi-scale and Multi-resource Impacts of Large-scale Adoption of Renewable Energy Sources"** by **E. Kabir**, V. Srikrishnan, V. Liu, S. Steinschneider, and L. Anderson ([arXiv:2307.11076](https://arxiv.org/pdf/2307.11076.pdf)).
+
+## What's in It
+
+The paper quantifies how large-scale adoption of wind and solar reshapes grid operations across multiple time scales and resource types. It characterizes how supply-demand covariability and operational constraints interact to determine system outcomes like curtailment and price dispersion.
+
+## Why It Matters
+
+Policy discussions about renewable targets often rely on annual averages. This work shows that annual-average framing misses important operational dynamics that only emerge when you look at finer time scales and across multiple resource dimensions simultaneously.
+
+Feedback from the community is welcome!

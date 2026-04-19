@@ -1,16 +1,26 @@
 /*-- scss:defaults --*/
 
-// Colors
-$darkgray: #222222; 
-$cornellred: #b31b1b;
-$lightred: #DF1E12;
-$lightgray: #f7f7f7;
+// ============================================
+// TAMU-inspired palette
+// ============================================
+$darkgray: #2c2c2c;
+$tamumaroon: #500000;       // TAMU primary
+$lightmaroon: #7a1010;      // Hover / accent
+$cornellred: #500000;       // Aliased to maroon so existing rules theme automatically
+$lightred: #7a1010;         // Aliased
+$lightgray: #faf8f5;        // Warm cream (replaces cool gray)
 $seagray: #9fad9f;
-$blue: #006699;
-$orange: #D47500;
+$blue: #500000;             // Links → maroon
+$orange: #b8860b;           // Warm gold (replaces bright orange)
 $warmgray: #A2998B;
+$tamugold: #b8860b;
+$cream: #faf8f5;
+$creamhover: #f5f0e6;
+$warmborder: #e8e2d5;
 
+// ============================================
 // Fonts
+// ============================================
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
 $font-family-sans-serif: "Fira Sans", sans-serif !default;
@@ -52,7 +62,7 @@ $footer-bg: $lightgray !default;
 $footer-fg: $darkgray !default;
 
 /*-- scss:rules --*/
-/* -- fonts * --*/
+/* -- fonts --*/
 @font-face {
     font-family: 'ApfelGrotesk';
     src: url(./assets/fonts/ApfelGrotezk/ApfelGrotezk-Regular.woff2) format('woff2');
@@ -63,7 +73,6 @@ $footer-fg: $darkgray !default;
 h1, .h1 {
     font-family: $headings-font-family;
     font-weight: $headings-font-weight;
-
 }
 
 h2, .h2 {
@@ -71,23 +80,18 @@ h2, .h2 {
     font-weight: $headings-font-weight;
 }
 
-// Body
 body {
     -webkit-font-smoothing: antialiased;
 }
 
-
-// Shrink blocks of code
 pre.text, pre.sourceCode, .cell-output pre {
     font-size: 0.775em;
 }
 
 .navbar {
     font-family: $navbar-font-family;
-    
 }
 
-// Put all the icons in a single row in the hamburger menu
 .navbar-nav.navbar-nav-scroll.ms-auto {
     flex-direction: row;
 }
@@ -120,7 +124,7 @@ pre.text, pre.sourceCode, .cell-output pre {
     font-weight: 600;
 }
 
-// Blog categories
+// Blog categories sidebar
 #quarto-margin-sidebar {
     .quarto-listing-category-title {
         margin-left: 0.5em;
@@ -153,14 +157,19 @@ pre.text, pre.sourceCode, .cell-output pre {
 }
 
 .nav-footer {
-    align-items: flex-start;  // Align all flex items to the top
+    align-items: flex-start;
     flex-wrap: wrap;
     border: 0 !important;
     min-height: 3em;
     font-family: $footer-font-family;
+    border-top: 3px solid $tamumaroon !important;
 
     a {
-        color: $blue;
+        color: $tamumaroon;
+
+        &:hover {
+            color: $lightmaroon;
+        }
     }
 
     .faux-block {
@@ -173,9 +182,6 @@ pre.text, pre.sourceCode, .cell-output pre {
         font-size: 0.8em;
     }
 
-    // In the default Quarto template, .nav-footer-center has position: absolute 
-    // turned on, which makes the div not be a flex item
-    // This changes that so that it *is* a flex item
     .nav-footer-center {
         text-align: center;
         position: inherit;
@@ -187,8 +193,6 @@ pre.text, pre.sourceCode, .cell-output pre {
         }
     }
 
-    // When the screen is medium or smaller, make each footer chunk be 100% width 
-    // and centered; otherwise make them be 33% width and left/right/centerd
     .nav-footer-left,
     .nav-footer-right,
     .nav-footer-center {
@@ -225,13 +229,14 @@ pre.text, pre.sourceCode, .cell-output pre {
     }
 
     .subtitle {
-        font-size: 1.3  em;
+        font-size: 1.3em;
     }
 }
 
 
-
+// ============================================
 // Research
+// ============================================
 .quarto-title-block {
 
     .quarto-title .quarto-categories {
@@ -241,7 +246,7 @@ pre.text, pre.sourceCode, .cell-output pre {
     }
 
     .project-details {
-        background-color: $cornellred;
+        background-color: $tamumaroon;
         padding: 0.75em;
         margin: 1em 0;
     }
@@ -261,7 +266,6 @@ pre.text, pre.sourceCode, .cell-output pre {
         padding: 0 1em 0 0;
         font-weight: bold;
     }
-
 }
 
 .back-nav {
@@ -276,10 +280,10 @@ pre.text, pre.sourceCode, .cell-output pre {
     .paper-title {
         color: $lightgray;
     }
-    
+
     .quarto-title .quarto-categories .quarto-category {
         background-color: rgba($lightgray, 0.7);
-        color: $cornellred;
+        color: $tamumaroon;
         font-size: 0.65em;
         font-weight: 500;
         opacity: 1;
@@ -312,7 +316,7 @@ pre.text, pre.sourceCode, .cell-output pre {
 
         li.project {
             margin-bottom: 2.5em;
-            border-left: 6px solid shift-color($red, -90%);
+            border-left: 6px solid $tamumaroon;
 
             p {
                 margin: 0;
@@ -337,7 +341,7 @@ pre.text, pre.sourceCode, .cell-output pre {
 
     .project-details-listing {
         margin-top: 0.8em;
-        background-color: shift-color($red, -90%);
+        background-color: $cream;
         font-size: 0.9rem;
 
         @media (max-width: map-get($grid-breakpoints, md)) {
@@ -351,7 +355,7 @@ pre.text, pre.sourceCode, .cell-output pre {
         }
 
         .details {
-            background-color: $red;
+            background-color: $tamumaroon;
             padding-right: 1.5em;
 
             a {
@@ -361,6 +365,9 @@ pre.text, pre.sourceCode, .cell-output pre {
     }
 }
 
+// ============================================
+// Teaching
+// ============================================
 .teaching {
     .course-entry {
         display: flex;
@@ -386,8 +393,9 @@ pre.text, pre.sourceCode, .cell-output pre {
             font-weight: 500;
             font-size: 1.25em;
             margin-bottom: 0.2em;
+            color: $tamumaroon;
         }
-        
+
         .course-details {
             font-weight: 300;
             font-size: 0.9em;
@@ -413,7 +421,7 @@ pre.text, pre.sourceCode, .cell-output pre {
             li {
                 display: inline-block;
                 white-space: nowrap;
-                background-color: $orange;
+                background-color: $tamugold;
                 margin: 0 0.2em 0.4em 0;
                 padding: 0.2em 0.4em;
                 font-size: 0.85em;
@@ -432,15 +440,18 @@ pre.text, pre.sourceCode, .cell-output pre {
     }
 }
 
+// ============================================
+// CV download button
+// ============================================
 .cv-download {
     font-family: $headings-font-family;
-    background-color: #771C6D;
-    border-color: #771C6D;
+    background-color: $tamumaroon;
+    border-color: $tamumaroon;
     color: $white;
 
     &:hover {
-        background-color: $red;
-        border-color: $red;
+        background-color: $lightmaroon;
+        border-color: $lightmaroon;
         color: $white;
     }
 }
@@ -454,46 +465,45 @@ pre.text, pre.sourceCode, .cell-output pre {
     }
 }
 
-/* -- people --*/
-
+// ============================================
+// People
+// ============================================
 .listing-box:hover {
-    border-color: $primary;
+    border-color: $tamumaroon;
     background-color: transparent;
-    box-shadow: 0px 1px 2px rgba(0,0,0,0.1), 
-              0px 2px 4px rgba(0,0,0,0.1), 
-              0px 4px 8px rgba(0,0,0,0.1), 
-              0px 8px 16px rgba(0,0,0,0.1);
-  }
-  
-  .listing-box-title {
+    box-shadow: 0px 1px 2px rgba(0,0,0,0.1),
+                0px 2px 4px rgba(0,0,0,0.1),
+                0px 4px 8px rgba(0,0,0,0.1),
+                0px 8px 16px rgba(0,0,0,0.1);
+}
+
+.listing-box-title {
     max-width: 80%;
     margin-top: 10px;
     margin-bottom: 12px;
-    color: #222222;
+    color: $darkgray;
     font-size: 18px;
     line-height: 1.2;
     font-weight: 700;
-  }
-  
-  .listing-box-subtitle {
-    /*    margin-top: auto;*/
-    //font-family: 'Bebas Neue', sans-serif;
+}
+
+.listing-box-subtitle {
     text-transform: uppercase;
     font-weight: bold;
     font-size: 12px;
     margin-bottom: 0;
-    color: #b31b1b;
+    color: $tamumaroon;
     line-height: 1.5;
-  }
-  
-  .listing-box-education {
+}
+
+.listing-box-education {
     margin-bottom: 0;
-    color: #222222;
+    color: $darkgray;
     font-size: 12px;
     line-height: 1.5;
-  }
-  
-  .listing-box-button a[role="button"] {
+}
+
+.listing-box-button a[role="button"] {
     width: 140px;
     min-height: 150px;
     color: rgb(55, 58, 60);
@@ -504,184 +514,161 @@ pre.text, pre.sourceCode, .cell-output pre {
     margin-bottom: 30px;
     margin-top: 10px;
     font-size: 0.9em;
-  }
-  
-  .listing-box-section {
+}
+
+.listing-box-section {
     margin-bottom: 30px;
     box-sizing: border-box;
-  }
-  
-  
-  .listing-box-image {
+}
+
+.listing-box-image {
     width: 100%;
     height: 270px;
     display: block;
-  }
-  
-  .quarto-listing-cols-3 {
-      padding-left: 10px;
-      padding-right: 10px;
-  
-  }
-  
-  .quarto-listing-cols-4 {
-      padding-left: 10px;
-      padding-right: 10px;
-  
-  }
-  
-  .anchored {
+}
+
+.quarto-listing-cols-3 {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.quarto-listing-cols-4 {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.anchored {
     padding-top: 8px;
     padding-left: 10px;
-  }
-  
-  /* -- publications --*/
+}
 
+// ============================================
+// Publications
+// ============================================
 .listing-pub-title a {
-    /*font-family: 'Bebas Neue', sans-serif;
-    max-width: 80%;
-    margin-top: 10px;
-    margin-bottom: 12px;
-    color: #222;
-    line-height: 1.2;*/
     font-size: 18px;
-    font-weight: 700; 
-  }
-  
-  .listing-pub-author {
+    font-weight: 700;
+    color: $tamumaroon;
+
+    &:hover {
+        color: $lightmaroon;
+    }
+}
+
+.listing-pub-author {
     color: #757883;
     font-size: 15px;
     margin-bottom: 6px;
-    /*line-height: 1.5;*/
-  }
-  
-  .listing-pub-number {
-    font-weight: 700; 
+}
+
+.listing-pub-number {
+    font-weight: 700;
     font-size: 15px;
-  
-  }
-  
-  .listing-pub-journal {
+    color: $tamumaroon;
+}
+
+.listing-pub-journal {
     color: #757883;
     font-size: 17px;
     margin-bottom: 8px;
-  }
-  
-  .listing-pub-url {
+    font-style: italic;
+}
+
+.listing-pub-url {
     font-size: 13px;
-  
-  }
+}
 
-  div.quarto-about-trestles {
+div.quarto-about-trestles {
     padding-bottom: 5em;
-  }
+}
 
 
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  /* =========================
-   People cards (modern)
-   ========================= */
-
+// ============================================
+// People cards (modern)
+// ============================================
 .people-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 1.25rem;
-  padding: 0.5rem;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.25rem;
+    padding: 0.5rem;
 }
 
 @media (max-width: 992px) {
-  .people-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .people-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 
 @media (max-width: 576px) {
-  .people-grid { grid-template-columns: 1fr; }
+    .people-grid { grid-template-columns: 1fr; }
 }
 
 .people-card {
-  display: flex;
-  flex-direction: column;
-  text-decoration: none !important;
-  border-radius: 18px;
-  overflow: hidden;
-  border: 1px solid rgba(0,0,0,0.08);
-  background: rgba(255,255,255,0.75);
-  backdrop-filter: blur(10px);
-  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
-  transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
-  color: inherit;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none !important;
+    border-radius: 18px;
+    overflow: hidden;
+    border: 1px solid rgba(0,0,0,0.08);
+    background: rgba(255,255,255,0.85);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+    transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+    color: inherit;
 }
 
 .people-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 18px 50px rgba(0,0,0,0.10);
-  border-color: rgba(0,0,0,0.12);
+    transform: translateY(-6px);
+    box-shadow: 0 18px 50px rgba(80, 0, 0, 0.12);
+    border-color: $tamumaroon;
 }
 
 .people-card__media {
-  position: relative;
-  height: 210px;
-  background: radial-gradient(circle at 30% 20%, rgba(0,0,0,0.06), rgba(0,0,0,0.02));
+    position: relative;
+    height: 210px;
+    background: radial-gradient(circle at 30% 20%, rgba(80,0,0,0.06), rgba(80,0,0,0.02));
 }
 
 .people-card__img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
 .people-card__body {
-  padding: 1rem 1rem 1.05rem;
+    padding: 1rem 1rem 1.05rem;
 }
 
 .people-card__name {
-  font-size: 1.05rem;
-  font-weight: 750;
-  letter-spacing: 0.2px;
-  line-height: 1.2;
+    font-size: 1.05rem;
+    font-weight: 750;
+    letter-spacing: 0.2px;
+    line-height: 1.2;
+    color: $tamumaroon;
 }
 
 .people-card__subtitle {
-  margin-top: 0.5rem;
-  font-size: 0.92rem;
-  opacity: 0.75;
-  line-height: 1.35;
+    margin-top: 0.5rem;
+    font-size: 0.92rem;
+    opacity: 0.75;
+    line-height: 1.35;
 }
 
 .people-card__edu {
-  margin-top: 0.6rem;
-  font-size: 0.86rem;
-  opacity: 0.75;
-  line-height: 1.35;
+    margin-top: 0.6rem;
+    font-size: 0.86rem;
+    opacity: 0.75;
+    line-height: 1.35;
 }
 
 .people-card__cta {
-  margin-top: 0.9rem;
-  display: inline-flex;
-  gap: 0.5rem;
-  align-items: center;
-  font-weight: 650;
-  font-size: 0.92rem;
-  opacity: 0.9;
+    margin-top: 0.9rem;
+    display: inline-flex;
+    gap: 0.5rem;
+    align-items: center;
+    font-weight: 650;
+    font-size: 0.92rem;
+    color: $tamumaroon;
+    opacity: 0.9;
 }
 
 /* Remove old styling conflicts */
@@ -690,5 +677,213 @@ pre.text, pre.sourceCode, .cell-output pre {
 .listing-box-subtitle,
 .listing-box-education,
 .listing-box-image {
-  all: unset;
+    all: unset;
+}
+
+
+// ============================================
+// Navbar polish
+// ============================================
+.navbar {
+    border-bottom: 3px solid $tamumaroon;
+}
+
+.navbar .nav-link {
+    position: relative;
+    transition: color 0.2s ease;
+
+    &:hover {
+        color: $tamumaroon !important;
+    }
+
+    &.active {
+        color: $tamumaroon !important;
+        font-weight: 600;
+    }
+}
+
+// ============================================
+// Title banner (the big block at top of pages)
+// ============================================
+.quarto-title-banner {
+    background: linear-gradient(135deg, $tamumaroon 0%, #3a0000 100%) !important;
+    color: $cream !important;
+
+    .title,
+    .subtitle,
+    h1, h2 {
+        color: $cream !important;
+    }
+}
+
+
+// ============================================
+// News & Updates — homepage
+// ============================================
+.news-heading {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0 0 0.85rem 0;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid $tamumaroon;
+    color: $tamumaroon;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    font-family: $headings-font-family;
+}
+
+.news-column {
+    padding: 1rem 1.25rem;
+    background-color: $cream;
+    border-radius: 6px;
+    border-left: 3px solid $tamumaroon;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+#news-home .quarto-post,
+#news-home .listing-item {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid $warmborder;
+    transition: background-color 0.2s ease;
+}
+
+#news-home .quarto-post:last-child,
+#news-home .listing-item:last-child {
+    border-bottom: none;
+}
+
+#news-home .quarto-post:hover,
+#news-home .listing-item:hover {
+    background-color: rgba(80, 0, 0, 0.03);
+}
+
+#news-home .listing-title,
+#news-home h3,
+#news-home h3 a,
+#news-home .listing-title a {
+    font-size: 0.92rem;
+    font-weight: 500;
+    line-height: 1.4;
+    margin: 0;
+    color: $darkgray;
+    text-decoration: none;
+    transition: color 0.2s ease;
+    font-family: $font-family-sans-serif;
+}
+
+#news-home h3 a:hover,
+#news-home .listing-title a:hover {
+    color: $tamumaroon;
+}
+
+#news-home .listing-date {
+    font-size: 0.72rem;
+    color: $tamugold;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 0.25rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.news-archive-link {
+    display: inline-block;
+    margin-top: 1.1rem;
+    padding-top: 0.75rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: $tamumaroon;
+    text-decoration: none;
+    letter-spacing: 0.02em;
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.news-archive-link:hover {
+    color: $lightmaroon;
+    text-decoration: none;
+    transform: translateX(3px);
+}
+
+
+// ============================================
+// News archive page (/news/)
+// ============================================
+body.quarto-listing-page h1.title {
+    color: $tamumaroon;
+    border-bottom: 2px solid $tamumaroon;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+body.quarto-listing-page .quarto-post,
+body.quarto-listing-page .listing-item {
+    padding: 1rem 1.25rem;
+    margin-bottom: 0.75rem;
+    background-color: $cream;
+    border-left: 3px solid $tamumaroon;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+}
+
+body.quarto-listing-page .quarto-post:hover,
+body.quarto-listing-page .listing-item:hover {
+    background-color: $creamhover;
+    transform: translateX(3px);
+    box-shadow: 0 2px 6px rgba(80, 0, 0, 0.08);
+}
+
+body.quarto-listing-page .listing-title,
+body.quarto-listing-page .listing-title a {
+    color: $darkgray;
+    font-weight: 600;
+    font-size: 1.1rem;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+body.quarto-listing-page .listing-title a:hover {
+    color: $tamumaroon;
+}
+
+body.quarto-listing-page .listing-date {
+    color: $tamugold;
+    font-weight: 600;
+    font-size: 0.8rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+body.quarto-listing-page .listing-description {
+    color: #555;
+    font-size: 0.92rem;
+    line-height: 1.5;
+    margin-top: 0.35rem;
+}
+
+
+// ============================================
+// Individual news post pages
+// ============================================
+body.quarto-document-content h1.title {
+    color: $tamumaroon;
+    border-bottom: 2px solid $tamugold;
+    padding-bottom: 0.6rem;
+    margin-bottom: 0.5rem;
+}
+
+body.quarto-document-content .date {
+    color: $tamugold;
+    font-weight: 600;
+    font-size: 0.85rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+}
+
+body.quarto-document-content h2 {
+    color: $tamumaroon;
+    font-size: 1.35rem;
+    margin-top: 2rem;
+    border-bottom: 1px solid $warmborder;
+    padding-bottom: 0.4rem;
 }

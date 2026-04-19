@@ -5,18 +5,45 @@ title: "Laboratory for Advancing Sustainable Energy Resilience (LASER)"
 subtitle: "Welcome to the Elnaz Kabir Research Group"
 title-block-banner: "electricity.jpg"
 title-block-banner-color: "#f7f7f7"
+listing:
+  - id: news-home
+    contents: "news"
+    type: default
+    sort: "date desc"
+    max-items: 4
+    fields: [date, title]
+    date-format: "DD MMM YYYY"
+    categories: false
+    feed: false
+    sort-ui: false
+    filter-ui: false
 ---
 
 :::: {.columns}
-::: {.column width=60%}
+
+::: {.column width="55%"}
 
 The electric power grid is the backbone of modern society, enabling nearly every other critical infrastructure. As electrification expands, AI data centers and reshored manufacturing add major new demand, and extreme weather events become more disruptive, the role of the grid becomes even more vital. At the same time, the energy transition is reshaping how we plan and operate the grid. More renewables, storage, and decentralized resources—along with fast-growing large loads—are making electricity supply and demand more variable and more weather-sensitive, increasing uncertainty and operational challenges.
 
 Our research group develops and applies advanced analytics to model, optimize, and strengthen future energy systems under uncertainty, with a focus on renewable-rich, electrified, decentralized, and interdependent networks. Our interdisciplinary, mission-driven work includes weather-informed forecasting of renewable generation, electricity demand, and prices; modeling storm and hurricane impacts on outages and restoration; and planning and operating power systems with high levels of renewables and storage using stochastic, robust, and data-driven optimization methods. We also study hydrogen integration as a long-duration energy storage option and industrial supply chains as flexible, grid-interactive resources that coordinate production and logistics decisions with grid conditions.
-:::
-::: {.column width=35%}
 
-![](Lab_img.jpeg){style="display:block; margin-left:auto; margin-right:auto; "width=100% fig-alt="Texas A&M University"}
+<!-- ![](Lab_img.jpeg){style="display:block; margin-top:1.5rem; border-radius:4px;" width="100%" fig-alt="Kabir Research Group Lab"} -->
+:::
+
+::: {.column width="3%"}
+:::
+
+::: {.column width="42%" .news-column}
+
+::: {.news-heading}
+News & Updates
+:::
+
+::: {#news-home}
+:::
+
+[View Full Archive →](/news/){.news-archive-link}
 
 :::
+
 ::::

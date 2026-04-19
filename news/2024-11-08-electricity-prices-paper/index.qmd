@@ -1,0 +1,17 @@
+---
+title: "New publication in Renewable Energy on multi-scale climate variability and electricity prices"
+description: "Quantifying the impact of multi-scale climate variability on electricity prices in a renewable-dominated power grid."
+date: "2024-11-08"
+author: "Kabir Group"
+categories: [publication]
+---
+
+Our paper, **"Quantifying the Impact of Multi-scale Climate Variability on Electricity Prices in a Renewable-dominated Power Grid"** by **E. Kabir**, V. Srikrishnan, V. Liu, S. Steinschneider, and L. Anderson, has been published in **Renewable Energy**.
+
+## Overview
+
+The paper quantifies how climate variability — across daily, seasonal, and multi-year time scales — translates into electricity price behavior when a power grid is dominated by renewables. The analysis separates out the relative contributions of short-term weather fluctuations and longer climate cycles.
+
+## Takeaway
+
+Price volatility under high-renewable conditions is not driven by a single time scale. Grid planners and market designers need to account for the full spectrum of climate variability when evaluating future market outcomes.

@@ -1,0 +1,19 @@
+---
+title: "Dr. Kabir joins Texas A&M University as Assistant Professor"
+description: "Welcome to Aggieland! The group is now officially at TAMU."
+date: "2023-08-01"
+author: "Kabir Group"
+categories: [milestone]
+---
+
+Dr. Kabir has officially joined **Texas A&M University** as an Assistant Professor in the Department of Engineering Technology & Industrial Distribution (ETID). This marks the formal launch of the **Laboratory for Advancing Sustainable Energy Resilience (LASER)** at TAMU.
+
+## About the New Home
+
+ETID at Texas A&M brings together expertise in engineering, industrial distribution, and applied research — a natural fit for the group's mission to develop advanced analytics for future energy systems. The group will also engage with the broader Texas A&M Energy Institute community.
+
+## Looking Ahead
+
+The group is now actively recruiting PhD and MS students interested in energy system optimization, weather-informed analytics, power outage modeling, and related topics. See the [Join Us](../../join/index.qmd) page for details.
+
+Gig 'em!
