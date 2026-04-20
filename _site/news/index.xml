@@ -39,38 +39,6 @@
   <pubDate>Wed, 15 Oct 2025 05:00:00 GMT</pubDate>
 </item>
 <item>
-  <title>Congratulations Vivienne Liu on a new paper about zero-emission grid vulnerabilities!</title>
-  <dc:creator>Kabir Group</dc:creator>
-  <link>https://viveks.bee.cornell.edu/news/2025-06-20-vivienne-zero-emission-paper/</link>
-  <description><![CDATA[ 
-
-
-
-
-<p>Vivienne Liu’s paper, <strong>“Energy System Vulnerabilities in a Zero-Emission Grid: The Role of Climate Variability and Technology Uncertainty”</strong> (V. Liu, V. Srikrishnan, K. Doering, <strong>E. Kabir</strong>, S. Steinschneider, L. Anderson), has been published.</p>
-<section id="abstract" class="level2">
-<h2 class="anchored" data-anchor-id="abstract">Abstract</h2>
-<p>The study examines how a fully decarbonized power grid responds to the combined pressures of climate variability and uncertain technology performance. Using a stochastic planning framework, the authors identify the specific conditions under which zero-emission systems remain resilient — and where they become fragile.</p>
-</section>
-<section id="key-contributions" class="level2">
-<h2 class="anchored" data-anchor-id="key-contributions">Key Contributions</h2>
-<ul>
-<li>A joint treatment of climate variability and technology uncertainty in long-term grid planning</li>
-<li>Evidence that some low-probability weather conditions disproportionately drive system stress</li>
-<li>Policy-relevant guidance for investments in generation, storage, and transmission</li>
-</ul>
-<p>Great work, Vivienne!</p>
-
-
-</section>
-
- ]]></description>
-  <category>publication</category>
-  <category>student</category>
-  <guid>https://viveks.bee.cornell.edu/news/2025-06-20-vivienne-zero-emission-paper/</guid>
-  <pubDate>Fri, 20 Jun 2025 05:00:00 GMT</pubDate>
-</item>
-<item>
   <title>New publication in Renewable Energy on multi-scale climate variability and electricity prices</title>
   <dc:creator>Kabir Group</dc:creator>
   <link>https://viveks.bee.cornell.edu/news/2024-11-08-electricity-prices-paper/</link>
@@ -95,33 +63,6 @@
   <category>publication</category>
   <guid>https://viveks.bee.cornell.edu/news/2024-11-08-electricity-prices-paper/</guid>
   <pubDate>Fri, 08 Nov 2024 06:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>Kabir Group presents at the INFORMS Annual Meeting</title>
-  <dc:creator>Kabir Group</dc:creator>
-  <link>https://viveks.bee.cornell.edu/news/2024-10-01-informs-annual-meeting/</link>
-  <description><![CDATA[ 
-
-
-
-
-<p>Members of the Kabir Group presented recent work at the <strong>INFORMS Annual Meeting</strong> in Phoenix, Arizona.</p>
-<section id="featured-talk" class="level2">
-<h2 class="anchored" data-anchor-id="featured-talk">Featured Talk</h2>
-<p><strong>“Multi-scale and Multi-resource Analysis of Increased Adoption of Renewable Energy Sources”</strong> — <strong>E. Kabir</strong>, V. Srikrishnan, V. Liu, S. Steinschneider, L. Anderson</p>
-<p>The talk covered how different renewable mixes interact with power grid operational constraints, with implications for curtailment, price volatility, and investment planning.</p>
-</section>
-<section id="why-informs" class="level2">
-<h2 class="anchored" data-anchor-id="why-informs">Why INFORMS</h2>
-<p>INFORMS brings together operations research and analytics communities from across academia and industry. It’s an important venue for sharing our group’s methodological contributions and connecting with collaborators working on related problems in energy, infrastructure, and supply chains.</p>
-
-
-</section>
-
- ]]></description>
-  <category>conference</category>
-  <guid>https://viveks.bee.cornell.edu/news/2024-10-01-informs-annual-meeting/</guid>
-  <pubDate>Tue, 01 Oct 2024 05:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Dr. Kabir gives Texas A&amp;M Energy Institute seminar on zero-carbon grids</title>
