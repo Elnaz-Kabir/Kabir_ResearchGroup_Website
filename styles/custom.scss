@@ -887,3 +887,207 @@ body.quarto-document-content h2 {
     border-bottom: 1px solid $warmborder;
     padding-bottom: 0.4rem;
 }
+
+// ============================================
+// Hero banner (custom title block on homepage)
+// ============================================
+.hero-banner {
+    background: linear-gradient(135deg, $tamumaroon 0%, #3a0000 100%);
+    color: $cream;
+    padding: 1.75rem 2rem;
+    margin: 0 -100vw 2rem -100vw;
+    padding-left: calc(50vw - 50% + 2rem);
+    padding-right: calc(50vw - 50% + 2rem);
+}
+
+.hero-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero-text {
+    .hero-title {
+        color: $cream !important;
+        font-family: $headings-font-family;
+        font-size: 1.85rem;
+        font-weight: 700;
+        line-height: 1.2;
+        margin: 0 0 0.6rem 0;
+        border: none;
+        display: block;
+    }
+
+    .hero-subtitle {
+        color: $tamugold !important;
+        font-family: $font-family-sans-serif;
+        font-size: 1rem;
+        font-weight: 400;
+        margin: 0;
+        letter-spacing: 0.02em;
+    }
+}
+
+.hero-image {
+    img {
+        width: 100%;
+        height: auto;
+        max-height: 240px;
+        object-fit: cover;
+        border-radius: 8px;
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+        display: block;
+    }
+}
+
+// Stack on mobile
+@media (max-width: 768px) {
+    .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+    }
+
+    .hero-text .hero-title {
+        font-size: 1.4rem;
+    }
+
+    .hero-text .hero-subtitle {
+        font-size: 0.95rem;
+    }
+
+    .hero-banner {
+        padding: 1.25rem 1.25rem;
+    }
+
+    .hero-image img {
+        max-height: 200px;
+    }
+}
+
+// Suppress Quarto's auto-generated title block on the homepage
+// (we use a custom hero banner instead)
+body > main > header#title-block-header,
+main#quarto-document-content > header#title-block-header {
+    display: none !important;
+}
+
+// Pull hero banner flush against the navbar (no gap)
+#quarto-document-content {
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+}
+
+main.content {
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+}
+
+// First child of main should sit at the very top
+main.content > .hero-banner:first-child {
+    margin-top: 0 !important;
+}
+
+.hero-image {
+    .carousel {
+        position: relative;
+        width: 100%;
+        max-height: 240px;
+        overflow: hidden;
+        border-radius: 8px;
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+    }
+
+    .carousel-track {
+        position: relative;
+        width: 100%;
+        height: 240px;
+    }
+
+    .carousel-slide {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: 0;
+        transition: opacity 0.6s ease-in-out;
+        border-radius: 8px;
+        margin: 0;
+
+        &.active {
+            opacity: 1;
+        }
+    }
+
+    .carousel-btn {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: rgba(80, 0, 0, 0.6);
+        color: $cream;
+        border: none;
+        font-size: 1.6rem;
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: background 0.2s ease;
+        z-index: 2;
+        line-height: 1;
+        padding: 0 0 4px 0;
+
+        &:hover {
+            background: $tamumaroon;
+        }
+    }
+
+    .carousel-prev { left: 10px; }
+    .carousel-next { right: 10px; }
+
+    .carousel-dots {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        gap: 8px;
+        z-index: 2;
+    }
+
+    .carousel-dot {
+        width: 9px;
+        height: 9px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.5);
+        border: none;
+        cursor: pointer;
+        padding: 0;
+        transition: background 0.2s ease;
+
+        &.active {
+            background: $tamugold;
+        }
+
+        &:hover {
+            background: $cream;
+        }
+    }
+}
+
+// Mobile
+@media (max-width: 768px) {
+    .hero-image {
+        .carousel,
+        .carousel-track {
+            height: 200px;
+            max-height: 200px;
+        }
+    }
+}
