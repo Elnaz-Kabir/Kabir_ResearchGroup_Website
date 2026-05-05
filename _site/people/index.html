@@ -43,7 +43,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-c4702b6e67f8e19bc06513fd91c1011e.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-79723272bcad303a28f624ab05359063.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-60d4a100a723e891038d498193cd75fb.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <link href="../site_libs/quarto-contrib/fontawesome6-1.2.0/all.min.css" rel="stylesheet">
 <link href="../site_libs/quarto-contrib/fontawesome6-1.2.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
@@ -195,9 +195,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-title','listing-subtitle','listing-image','listing-education',{ data: ['index'] },{ data: ['categories'] }],
+      valueNames: ['listing-title','listing-subtitle','listing-image','listing-education',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
       
-      searchColumns: [],
+      searchColumns: ["listing-project","listing-pagetitle","listing-author-meta","listing-website","listing-format","listing-resources","listing-_quarto-vars","listing-language","listing-title","listing-last","listing-first","listing-people_group","listing-email","listing-education","listing-subtitle","listing-affiliation","listing-image","listing-page-layout","listing-about","listing-listing","listing-path","listing-outputHref","listing-author","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -436,27 +436,6 @@ window.Quarto = {
 
   
 
-    <a class="people-card" href="../people/kharbanda-raunak/index.html">
-      <div class="people-card__media">
-        <img alt="Raunak Kharbanda" src="../people/kharbanda-raunak/raunak.jpeg" class="people-card__img" loading="lazy">
-      </div>
-
-      <div class="people-card__body">
-        <div class="people-card__name">Raunak Kharbanda</div>
-
-        
-          <div class="people-card__subtitle">M.S. Student, Computer Science, Texas A&amp;M University</div>
-        
-
-        <div class="people-card__cta">
-          <span>View profile</span>
-          <span aria-hidden="true">→</span>
-        </div>
-      </div>
-    </a>
-
-  
-
     <a class="people-card" href="../people/kazemirazi-seyedmehdi/index.html">
       <div class="people-card__media">
         <img alt="Seyedmehdi kazemirazi" src="../people/kazemirazi-seyedmehdi/Seyed.jpeg" class="people-card__img" loading="lazy">
@@ -535,16 +514,30 @@ window.Quarto = {
 <section id="alumni" class="level2">
 <h2 class="anchored" data-anchor-id="alumni">Alumni</h2>
 <div id="listing-alumni" class="quarto-listing quarto-listing-container-custom">
-
-<div class="quarto-listing quarto-listing-container-grid">
+<div class="people-grid">
   
-  <div class="list grid quarto-listing-cols-4"> 
 
-    
+    <a class="people-card" href="../people/kharbanda-raunak/index.html">
+      <div class="people-card__media">
+        <img alt="Raunak Kharbanda" src="../people/kharbanda-raunak/raunak.jpg" class="people-card__img" loading="lazy">
+      </div>
+
+      <div class="people-card__body">
+        <div class="people-card__name">Raunak Kharbanda</div>
+
+        
+          <div class="people-card__subtitle">M.S. Student, Computer Science, Texas A&amp;M University</div>
+        
+
+        <div class="people-card__cta">
+          <span>View profile</span>
+          <span aria-hidden="true">→</span>
+        </div>
+      </div>
+    </a>
+
   
 </div>
-</div>
-
 <div class="listing-no-matching d-none">No matching items</div>
 </div>
 

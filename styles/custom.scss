@@ -944,26 +944,74 @@ body.quarto-document-content h2 {
 }
 
 // Stack on mobile
-@media (max-width: 768px) {
+@media (max-width: 992px) {
+    .hero-banner {
+        width: 100vw !important;
+        margin-left: calc(50% - 50vw) !important;
+        margin-right: calc(50% - 50vw) !important;
+        margin-top: 0 !important;
+        margin-bottom: 2rem !important;
+
+        padding: 1.25rem 1rem !important;
+        box-sizing: border-box !important;
+        overflow: visible !important;
+    }
+
     .hero-grid {
-        grid-template-columns: 1fr;
-        gap: 1.25rem;
+        display: block !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+    }
+
+    .hero-text {
+        display: block !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+        margin-bottom: 1.25rem !important;
     }
 
     .hero-text .hero-title {
-        font-size: 1.4rem;
+        display: block !important;
+        width: 100% !important;
+        max-width: 100% !important;
+
+        font-size: 1.25rem !important;
+        line-height: 1.3 !important;
+
+        white-space: normal !important;
+        overflow: visible !important;
+        text-overflow: unset !important;
+        overflow-wrap: anywhere !important;
+        word-break: normal !important;
     }
 
     .hero-text .hero-subtitle {
-        font-size: 0.95rem;
+        display: block !important;
+        width: 100% !important;
+        max-width: 100% !important;
+
+        font-size: 0.9rem !important;
+        line-height: 1.35 !important;
+
+        white-space: normal !important;
+        overflow: visible !important;
+        text-overflow: unset !important;
+        overflow-wrap: anywhere !important;
     }
 
-    .hero-banner {
-        padding: 1.25rem 1.25rem;
+    .hero-image {
+        display: block !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
     }
 
-    .hero-image img {
-        max-height: 200px;
+    .hero-image .carousel,
+    .hero-image .carousel-track {
+        width: 100% !important;
+        max-width: 100% !important;
     }
 }
 
@@ -1081,13 +1129,24 @@ main.content > .hero-banner:first-child {
     }
 }
 
-// Mobile
+// Mobile carousel
 @media (max-width: 768px) {
     .hero-image {
-        .carousel,
+        .carousel {
+            height: auto;
+            max-height: none;
+            overflow: hidden;
+        }
+
         .carousel-track {
-            height: 200px;
-            max-height: 200px;
+            height: 220px;
+        }
+
+        .carousel-slide {
+            height: 220px;
+            object-fit: contain;
+            background: #3a0000;
         }
     }
 }
+

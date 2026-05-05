@@ -42,7 +42,7 @@ listing:
       people_group: "alumni"
     exclude:
       external: true
-    template: ../_ejs/alumni-box.ejs
+    template: ../_ejs/people-box.ejs
     type: grid
     fields: [title, subtitle, image, education]
 

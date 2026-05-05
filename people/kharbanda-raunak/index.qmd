@@ -2,19 +2,19 @@
 title: &TITLE Raunak Kharbanda
 last: Kharbanda
 first: Raunak
-people_group: "gradstudent"
+people_group: "alumni"
 email: "raunak@tamu.edu"
 education:
   - M.S. Student, Computer Science, Texas A&M University  <br> B.S. Information Technology, Maharaja Agrasen Institute of Technology, 2024
 subtitle: "M.S. Student, Computer Science, Texas A&M University"
 affiliation: Cornell University
-image: raunak.jpeg
+image: raunak.jpg
 page-layout: full
 about: 
   id: about
   template: trestles
   image-shape: round
-  image: raunak.jpeg
+  image: raunak.jpg
   links:
     - icon: envelope
       text: Email
